@@ -4,22 +4,22 @@ import { Shield, Scale, Lock } from "lucide-react"
 const partners = [
   {
     name: "NVIDIA Inception Program",
-    logo: "/images/partners/nvidia-inception.jpg",
+    logo: "/images/partners/nvidia-inception.png",
     role: "Startup member",
   },
   {
     name: "EDISS",
-    logo: "/images/partners/ediss.jpg",
+    logo: "/images/partners/ediss.png",
     role: "Associate partners",
   },
   {
     name: "Hanken",
-    logo: "/images/partners/hanken.jpg",
+    logo: "/images/partners/hanken.png",
     role: "Startup member",
   },
   {
     name: "Helsinki",
-    logo: "/images/partners/helsinki.jpg",
+    logo: "/images/partners/helsinki.png",
     role: "Startup member",
   },
 ]
