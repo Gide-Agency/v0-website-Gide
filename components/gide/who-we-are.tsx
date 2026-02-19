@@ -9,7 +9,7 @@ const partners = [
   },
   {
     name: "EDISS",
-    logo: "/images/partners/ediss.png",
+    logo: "/images/partners/ediss-masters.jpg",
     role: "Associate partners",
   },
   {
@@ -115,17 +115,14 @@ export function WhoWeAre() {
           </h3>
           <div className="grid grid-cols-2 gap-8 md:gap-12">
             {partners.map((partner) => (
-              <div key={partner.name} className="flex flex-col items-center text-center">
-                <h4 className="mb-4 text-sm font-semibold text-foreground">
-                  {partner.name}
-                </h4>
-                <div className="mb-3 flex h-16 items-center justify-center">
+              <div key={partner.name} className="flex flex-col items-center text-center gap-3">
+                <div className="flex h-20 items-center justify-center">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
-                    width={160}
-                    height={48}
-                    className="h-auto w-auto max-h-12 object-contain"
+                    width={200}
+                    height={80}
+                    className="h-auto w-auto max-h-16 object-contain"
                   />
                 </div>
                 <p className="text-xs text-muted-foreground">{partner.role}</p>
