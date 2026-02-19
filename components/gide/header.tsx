@@ -51,7 +51,9 @@ export function Header() {
         {/* CTA - right */}
         <div className="hidden items-center justify-end md:flex">
           <a
-            href="#cta"
+            href="https://calendly.com/harald-gideagency/15plus"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             Book intro call
@@ -87,7 +89,9 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#cta"
+              href="https://calendly.com/harald-gideagency/15plus"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-2 inline-block rounded-md bg-primary px-5 py-2 text-center text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               onClick={() => setMobileOpen(false)}
             >
