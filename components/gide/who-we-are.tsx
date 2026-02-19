@@ -122,7 +122,8 @@ export function WhoWeAre() {
                     alt={partner.name}
                     width={200}
                     height={80}
-                    className="h-auto w-auto max-h-16 object-contain"
+                    className="max-h-16 object-contain"
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 </div>
                 <p className="text-xs text-muted-foreground">{partner.role}</p>
