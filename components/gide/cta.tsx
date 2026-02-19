@@ -13,7 +13,9 @@ export function CTA() {
         </p>
         <div className="mt-10">
           <a
-            href="#"
+            href="https://calendly.com/harald-gideagency/15plus"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-md bg-primary px-8 py-3.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
             Book intro call
