@@ -1,5 +1,41 @@
-"use client"
+import { Header } from "@/components/gide/header"
+import { Hero } from "@/components/gide/hero"
+import { WhatGideDoes } from "@/components/gide/what-gide-does"
+import { HowItWorks } from "@/components/gide/how-it-works"
+import { WhoItsFor } from "@/components/gide/who-its-for"
+import { WhoWeAre } from "@/components/gide/who-we-are"
+import { Trust } from "@/components/gide/trust"
+import { CTA } from "@/components/gide/cta"
+import { Footer } from "@/components/gide/footer"
 
-export default function SyntheticV0PageForDeployment() {
-  return <div></div>
+function Divider() {
+  return (
+    <div className="mx-auto max-w-6xl px-6">
+      <div className="h-px w-full bg-border" />
+    </div>
+  )
+}
+
+export default function Page() {
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Divider />
+        <WhatGideDoes />
+        <Divider />
+        <HowItWorks />
+        <Divider />
+        <WhoItsFor />
+        <Divider />
+        <WhoWeAre />
+        <Divider />
+        <Trust />
+        <Divider />
+        <CTA />
+      </main>
+      <Footer />
+    </>
+  )
 }
