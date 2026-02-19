@@ -116,14 +116,12 @@ export function WhoWeAre() {
           <div className="grid grid-cols-2 gap-8 md:gap-12">
             {partners.map((partner) => (
               <div key={partner.name} className="flex flex-col items-center text-center gap-3">
-                <div className="flex h-20 items-center justify-center">
+                <div className="relative flex h-16 w-full items-center justify-center">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
-                    width={200}
-                    height={80}
-                    className="max-h-16 object-contain"
-                    style={{ width: 'auto', height: 'auto' }}
+                    fill
+                    className="object-contain"
                   />
                 </div>
                 <p className="text-xs text-muted-foreground">{partner.role}</p>
