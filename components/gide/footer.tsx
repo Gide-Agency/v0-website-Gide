@@ -20,18 +20,18 @@ export function Footer() {
               support@gideagency.com
             </a>
             <div className="flex items-center gap-2">
-              <a 
-                href="https://www.linkedin.com/company/gide-agency" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/company/gideagency"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a 
-                href="https://x.com/gideagency" 
-                target="_blank" 
+              <a
+                href="https://x.com/gideagency"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="X (Twitter)"
