@@ -3,7 +3,7 @@ import { Layers, MessageCircleQuestion, ShieldCheck, Zap } from "lucide-react"
 const painPoints = [
   { icon: Layers, text: "Identifying correct data across fragmented sources" },
   { icon: MessageCircleQuestion, text: "Interpreting vague requests before analysis" },
-  { icon: ShieldCheck, text: "Rebuilding context instead of compounding knowledge" },
+  { icon: ShieldCheck, text: "Rebuilding context instead of compounding" },
   { icon: Zap, text: "AI answers without sources or justification" },
 ]
 
