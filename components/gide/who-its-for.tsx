@@ -1,10 +1,10 @@
 import { Layers, MessageCircleQuestion, ShieldCheck, Zap } from "lucide-react"
 
 const painPoints = [
-  { icon: Layers, text: "Fragmented tools and datasets" },
-  { icon: MessageCircleQuestion, text: "Constant ad-hoc questions" },
-  { icon: ShieldCheck, text: "Need for reliable numbers" },
-  { icon: Zap, text: "Pressure to deliver insights fast" },
+  { icon: Layers, text: "Identifying correct data across fragmented sources" },
+  { icon: MessageCircleQuestion, text: "Interpreting vague requests before analysis" },
+  { icon: ShieldCheck, text: "Rebuilding context instead of compounding" },
+  { icon: Zap, text: "AI answers without sources or justification" },
 ]
 
 export function WhoItsFor() {
