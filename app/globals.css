@@ -126,7 +126,7 @@
     @apply bg-background text-foreground;
   }
 
-  @keyframes scroll {
+  @keyframes scroll-left {
     0% {
       transform: translateX(0);
     }
@@ -135,7 +135,7 @@
     }
   }
 
-  .animate-scroll {
-    animation: scroll 30s linear infinite;
+  .animate-scroll-left {
+    animation: scroll-left 30s linear infinite;
   }
 }

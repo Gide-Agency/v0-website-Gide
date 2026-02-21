@@ -47,16 +47,27 @@ export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 max-w-3xl">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            Who we are
-          </p>
-          <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            We are building the layer between your questions, your data and your action.
-          </h2>
+        <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-3xl flex-1">
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+              Who we are
+            </p>
+            <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
+              We are building the layer between your questions, your data and your action.
+            </h2>
+          </div>
+          {/* Harald image */}
+          <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-lg border border-border md:h-56 md:w-56">
+            <Image
+              src="/images/harald-helsinki.jpg"
+              alt="Harald in Helsinki"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {/* A tool for analysts */}
           <div className="rounded-lg border border-border bg-card p-8">
             <h3 className="mb-4 font-serif text-xl text-card-foreground">
@@ -79,17 +90,6 @@ export function WhoWeAre() {
               companies to use AI securely for analysis without surrendering
               sovereignty.
             </p>
-          </div>
-
-          {/* Harald image */}
-          <div className="rounded-lg border border-border overflow-hidden">
-            <Image
-              src="/images/harald-helsinki.jpg"
-              alt="Harald in Helsinki"
-              width={400}
-              height={400}
-              className="h-full w-full object-cover"
-            />
           </div>
         </div>
 
@@ -128,7 +128,7 @@ export function WhoWeAre() {
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-background to-transparent" />
             
             {/* Scrolling container */}
-            <div className="flex animate-scroll gap-16">
+            <div className="flex animate-scroll-left gap-16 hover:[animation-play-state:paused]">
               {/* First set of logos */}
               {partners.map((partner) => (
                 <div key={`${partner.name}-1`} className="flex h-20 w-40 flex-shrink-0 items-center justify-center">
