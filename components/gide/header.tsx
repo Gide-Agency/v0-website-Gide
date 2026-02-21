@@ -17,8 +17,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-md">
-      <div className="mx-auto grid max-w-6xl grid-cols-3 items-center px-6 py-4">
-        {/* Logo - left */}
+      <div className="mx-auto grid max-w-6xl grid-cols-[auto_1fr_auto] items-center px-6 py-4">
         <div className="flex items-center">
           <a href="#" className="block">
             <Image
@@ -32,9 +31,8 @@ export function Header() {
           </a>
         </div>
 
-        {/* Nav links - center, single line */}
         <nav
-          className="hidden items-center justify-center gap-6 whitespace-nowrap md:flex lg:gap-8"
+          className="hidden min-w-0 items-center justify-center gap-6 whitespace-nowrap md:flex lg:gap-8"
           aria-label="Main navigation"
         >
           {navLinks.map((link) => (
@@ -48,7 +46,6 @@ export function Header() {
           ))}
         </nav>
 
-        {/* CTA - right */}
         <div className="hidden items-center justify-end md:flex">
           <a
             href="https://calendly.com/harald-gideagency/15plus"
@@ -56,11 +53,10 @@ export function Header() {
             rel="noopener noreferrer"
             className="rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-              Try for free
-            </a>
+            Try for free
+          </a>
         </div>
 
-        {/* Mobile menu button */}
         <div className="col-span-2 flex justify-end md:hidden">
           <button
             className="text-foreground"
@@ -95,7 +91,7 @@ export function Header() {
               className="mt-2 inline-block rounded-md bg-primary px-5 py-2 text-center text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               onClick={() => setMobileOpen(false)}
             >
-            Try for free
+              Try for free
             </a>
           </div>
         </nav>
