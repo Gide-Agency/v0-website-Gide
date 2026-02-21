@@ -47,7 +47,7 @@ export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
+        <div className="mb-16 flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
           <div className="max-w-3xl flex-1">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
               Who we are
@@ -57,7 +57,7 @@ export function WhoWeAre() {
             </h2>
           </div>
           {/* Harald image */}
-          <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-lg border border-border md:h-56 md:w-56">
+          <div className="relative h-40 w-40 flex-shrink-0 overflow-hidden rounded-lg border border-border md:h-48 md:w-48">
             <Image
               src="/images/harald-helsinki.jpg"
               alt="Harald in Helsinki"
@@ -128,30 +128,23 @@ export function WhoWeAre() {
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-background to-transparent" />
             
             {/* Scrolling container */}
-            <div className="flex animate-scroll-left gap-16 hover:[animation-play-state:paused]">
-              {/* First set of logos */}
-              {partners.map((partner) => (
-                <div key={`${partner.name}-1`} className="flex h-20 w-40 flex-shrink-0 items-center justify-center">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={160}
-                    height={80}
-                    className="h-auto max-h-16 w-auto max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                  />
-                </div>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {partners.map((partner) => (
-                <div key={`${partner.name}-2`} className="flex h-20 w-40 flex-shrink-0 items-center justify-center">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    width={160}
-                    height={80}
-                    className="h-auto max-h-16 w-auto max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                  />
-                </div>
+            <div className="group flex animate-scroll-left gap-16">
+              {/* Multiple sets for seamless infinite loop */}
+              {[...Array(4)].map((_, setIndex) => (
+                partners.map((partner) => (
+                  <div 
+                    key={`${partner.name}-${setIndex}`} 
+                    className="flex h-20 w-40 flex-shrink-0 items-center justify-center group-hover:[animation-play-state:paused]"
+                  >
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      width={160}
+                      height={80}
+                      className="h-auto max-h-16 w-auto max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                    />
+                  </div>
+                ))
               ))}
             </div>
           </div>
