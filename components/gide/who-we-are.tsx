@@ -47,8 +47,8 @@ export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
-          <div className="max-w-3xl flex-1">
+        <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center">
+          <div className="flex-1">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
               Who we are
             </p>
@@ -57,7 +57,7 @@ export function WhoWeAre() {
             </h2>
           </div>
           {/* Harald image */}
-          <div className="relative h-40 w-40 flex-shrink-0 overflow-hidden rounded-lg border border-border md:h-48 md:w-48">
+          <div className="relative h-36 w-36 flex-shrink-0 overflow-hidden rounded-full md:h-44 md:w-44">
             <Image
               src="/images/harald-helsinki.jpg"
               alt="Harald in Helsinki"
@@ -128,13 +128,13 @@ export function WhoWeAre() {
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-background to-transparent" />
             
             {/* Scrolling container */}
-            <div className="group flex animate-scroll-left gap-16">
+            <div className="flex animate-scroll-left gap-16 hover:[animation-play-state:paused]">
               {/* Multiple sets for seamless infinite loop */}
               {[...Array(4)].map((_, setIndex) => (
                 partners.map((partner) => (
                   <div 
                     key={`${partner.name}-${setIndex}`} 
-                    className="flex h-20 w-40 flex-shrink-0 items-center justify-center group-hover:[animation-play-state:paused]"
+                    className="flex h-20 w-40 flex-shrink-0 items-center justify-center"
                   >
                     <Image
                       src={partner.logo}
