@@ -14,7 +14,7 @@ export function Footer() {
           />
         </a>
         <p className="text-xs text-muted-foreground">
-          {"© "}{new Date().getFullYear()} Gide. All rights reserved.
+          {"© "}{new Date().getFullYear()} Gide Oy. All rights reserved.
         </p>
       </div>
     </footer>
