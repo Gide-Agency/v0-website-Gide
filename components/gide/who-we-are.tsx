@@ -57,7 +57,7 @@ export function WhoWeAre() {
             </h2>
           </div>
           {/* Harald image */}
-          <div className="relative h-36 w-36 flex-shrink-0 overflow-hidden rounded-full md:h-44 md:w-44">
+          <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full md:h-56 md:w-56">
             <Image
               src="/images/harald-helsinki.jpg"
               alt="Harald in Helsinki"
