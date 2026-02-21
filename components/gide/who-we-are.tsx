@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Shield, Scale, Lock } from "lucide-react"
 
@@ -5,22 +7,18 @@ const partners = [
   {
     name: "NVIDIA Inception Program",
     logo: "/images/partners/nvidia-inception.png",
-    role: "Startup member",
   },
   {
     name: "EDISS",
     logo: "/images/partners/ediss-masters.jpg",
-    role: "Associate partners",
   },
   {
     name: "Hanken",
     logo: "/images/partners/hanken.png",
-    role: "Startup member",
   },
   {
     name: "Helsinki",
     logo: "/images/partners/helsinki.png",
-    role: "Startup member",
   },
 ]
 
@@ -58,7 +56,7 @@ export function WhoWeAre() {
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-3">
           {/* A tool for analysts */}
           <div className="rounded-lg border border-border bg-card p-8">
             <h3 className="mb-4 font-serif text-xl text-card-foreground">
@@ -81,6 +79,17 @@ export function WhoWeAre() {
               companies to use AI securely for analysis without surrendering
               sovereignty.
             </p>
+          </div>
+
+          {/* Harald image */}
+          <div className="rounded-lg border border-border overflow-hidden">
+            <Image
+              src="/images/harald-helsinki.jpg"
+              alt="Harald in Helsinki"
+              width={400}
+              height={400}
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
 
@@ -113,20 +122,38 @@ export function WhoWeAre() {
           <h3 className="mb-12 text-center font-serif text-3xl tracking-tight text-foreground sm:text-4xl text-balance">
             Partners and supporters
           </h3>
-          <div className="grid grid-cols-2 gap-8 md:gap-12">
-            {partners.map((partner) => (
-              <div key={partner.name} className="flex flex-col items-center text-center gap-3">
-                <div className="relative flex h-16 w-full items-center justify-center">
+          <div className="relative overflow-hidden">
+            {/* Fade effect on sides */}
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-background to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-background to-transparent" />
+            
+            {/* Scrolling container */}
+            <div className="flex animate-scroll gap-16">
+              {/* First set of logos */}
+              {partners.map((partner) => (
+                <div key={`${partner.name}-1`} className="flex h-20 w-40 flex-shrink-0 items-center justify-center">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
-                    fill
-                    className="object-contain"
+                    width={160}
+                    height={80}
+                    className="h-auto max-h-16 w-auto max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
                   />
                 </div>
-                <p className="text-xs text-muted-foreground">{partner.role}</p>
-              </div>
-            ))}
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {partners.map((partner) => (
+                <div key={`${partner.name}-2`} className="flex h-20 w-40 flex-shrink-0 items-center justify-center">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={160}
+                    height={80}
+                    className="h-auto max-h-16 w-auto max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

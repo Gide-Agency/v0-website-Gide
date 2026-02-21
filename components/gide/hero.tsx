@@ -28,7 +28,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-md bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Book intro call
+            Try for free
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
@@ -37,7 +37,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-md border border-border px-7 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
           >
-            Try the demo
+            Test the demo
           </a>
         </div>
       </div>
