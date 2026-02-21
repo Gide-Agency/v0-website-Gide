@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "What we do", href: "#what-we-do" },
+  { label: "What we do", href: "#what-gide-does" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Who It's For", href: "#who-its-for" },
   { label: "Who we are", href: "#who-we-are" },
@@ -56,8 +56,8 @@ export function Header() {
             rel="noopener noreferrer"
             className="rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Book intro call
-          </a>
+              Try for free
+            </a>
         </div>
 
         {/* Mobile menu button */}
@@ -95,7 +95,7 @@ export function Header() {
               className="mt-2 inline-block rounded-md bg-primary px-5 py-2 text-center text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
               onClick={() => setMobileOpen(false)}
             >
-              Book intro call
+            Try for free
             </a>
           </div>
         </nav>

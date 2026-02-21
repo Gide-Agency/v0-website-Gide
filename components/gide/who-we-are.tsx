@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Shield, Scale, Lock } from "lucide-react"
 
@@ -5,22 +7,18 @@ const partners = [
   {
     name: "NVIDIA Inception Program",
     logo: "/images/partners/nvidia-inception.png",
-    role: "Startup member",
   },
   {
     name: "EDISS",
     logo: "/images/partners/ediss-masters.jpg",
-    role: "Associate partners",
   },
   {
     name: "Hanken",
     logo: "/images/partners/hanken.png",
-    role: "Startup member",
   },
   {
     name: "Helsinki",
     logo: "/images/partners/helsinki.png",
-    role: "Startup member",
   },
 ]
 
@@ -49,13 +47,24 @@ export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 max-w-3xl">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            Who we are
-          </p>
-          <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            We are building the layer between your questions, your data and your action.
-          </h2>
+        <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center">
+          <div className="flex-1">
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+              Who we are
+            </p>
+            <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
+              We are building the layer between your questions, your data and your action.
+            </h2>
+          </div>
+          {/* Harald image */}
+          <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full md:h-56 md:w-56">
+            <Image
+              src="/images/harald-helsinki.jpg"
+              alt="Harald in Helsinki"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -113,20 +122,31 @@ export function WhoWeAre() {
           <h3 className="mb-12 text-center font-serif text-3xl tracking-tight text-foreground sm:text-4xl text-balance">
             Partners and supporters
           </h3>
-          <div className="grid grid-cols-2 gap-8 md:gap-12">
-            {partners.map((partner) => (
-              <div key={partner.name} className="flex flex-col items-center text-center gap-3">
-                <div className="relative flex h-16 w-full items-center justify-center">
-                  <Image
-                    src={partner.logo}
-                    alt={partner.name}
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <p className="text-xs text-muted-foreground">{partner.role}</p>
-              </div>
-            ))}
+          <div className="relative overflow-hidden">
+            {/* Fade effect on sides */}
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-background to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-background to-transparent" />
+            
+            {/* Scrolling container */}
+            <div className="flex animate-scroll-left gap-16 hover:[animation-play-state:paused]">
+              {/* Multiple sets for seamless infinite loop */}
+              {[...Array(4)].map((_, setIndex) => (
+                partners.map((partner) => (
+                  <div 
+                    key={`${partner.name}-${setIndex}`} 
+                    className="flex h-20 w-40 flex-shrink-0 items-center justify-center"
+                  >
+                    <Image
+                      src={partner.logo}
+                      alt={partner.name}
+                      width={160}
+                      height={80}
+                      className="h-auto max-h-16 w-auto max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                    />
+                  </div>
+                ))
+              ))}
+            </div>
           </div>
         </div>
       </div>

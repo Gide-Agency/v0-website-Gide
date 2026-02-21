@@ -14,12 +14,11 @@ export function Hero() {
         </div>
 
         <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-          Go from executive question to answer, fast & easy.
+          Executive questions to structured analysis.
         </h1>
 
         <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-          You want accurate answers from your data. Gide sources them with
-          governed and traceable reasoning.
+          Surface the data sources and derive the analytical path to deliver more auditable answers.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -29,7 +28,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-md bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Book intro call
+            Try for free
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </a>
           <a
@@ -38,7 +37,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-md border border-border px-7 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
           >
-            Try the demo
+            Test the demo
           </a>
         </div>
       </div>
