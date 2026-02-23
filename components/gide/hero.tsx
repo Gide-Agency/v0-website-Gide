@@ -37,7 +37,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-md border border-border px-7 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
           >
-            Test the demo
+            Test live demo
           </a>
         </div>
       </div>
