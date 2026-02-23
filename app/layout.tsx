@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     'Interpret business questions, surface relevant data sources, and derive an analysis path to deliver answers grounded in evidence rather than generated assumptions.',
 
-  metadataBase: new URL('https://gideagency.com'), // CHANGE if different domain
+  metadataBase: new URL('https://www.gideagency.com'), // CHANGE if different domain
   alternates: {
     canonical: '/',
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: 'New-Era analytics based on the truth',
     description:
       'Interpret business questions, surface relevant data sources, and derive an analysis path to deliver answers grounded in evidence rather than generated assumptions.',
-    url: 'https://gide.ai',
+    url: 'https://www.gideagency.com',
     siteName: 'Gide',
     images: [
       {
@@ -90,3 +90,4 @@ export default function RootLayout({
     </html>
   )
 }
+
