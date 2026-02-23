@@ -9,9 +9,9 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Gide - Reason with data, without hallucinations',
+  title: 'New-Era analytics based on the truth',
   description:
-    'You want accurate answers from your data. Gide sources them with governed and traceable reasoning.',
+    'Interpret business questions, surface relevant data sources, and derive an analysis path to deliver answers grounded in evidence rather than generated assumptions.',
 
   metadataBase: new URL('https://gideagency.com'), // CHANGE if different domain
   alternates: {
@@ -34,7 +34,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-
   icons: {
     icon: [
       { url: '/favicon.png' }, // your new favicon
@@ -46,9 +45,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'Gide - Reason with data, without hallucinations',
+    title: 'New-Era analytics based on the truth',
     description:
-      'Accurate answers from your data through governed and traceable reasoning.',
+      'Interpret business questions, surface relevant data sources, and derive an analysis path to deliver answers grounded in evidence rather than generated assumptions.',
     url: 'https://gide.ai',
     siteName: 'Gide',
     images: [
@@ -64,9 +63,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Gide - Reason with data, without hallucinations',
+    title: 'New-Era analytics based on the truth',
     description:
-      'Accurate answers from your data through governed and traceable reasoning.',
+      'Interpret business questions, surface relevant data sources, and derive an analysis path to deliver answers grounded in evidence rather than generated assumptions.',
     images: ['/og-image.png'],
   },
 }
