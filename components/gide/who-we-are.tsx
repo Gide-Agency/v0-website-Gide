@@ -59,7 +59,7 @@ export function WhoWeAre() {
           {/* Harald image */}
           <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full md:h-56 md:w-56">
             <Image
-              src="/images/harald-helsinki.jpg"
+              src="/images/Harald-Helsinki.png"
               alt="Harald in Helsinki"
               fill
               className="object-cover"
@@ -126,14 +126,14 @@ export function WhoWeAre() {
             {/* Fade effect on sides */}
             <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-background to-transparent" />
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-background to-transparent" />
-            
+
             {/* Scrolling container */}
             <div className="flex animate-scroll-left gap-16 hover:[animation-play-state:paused]">
               {/* Multiple sets for seamless infinite loop */}
               {[...Array(4)].map((_, setIndex) => (
                 partners.map((partner) => (
-                  <div 
-                    key={`${partner.name}-${setIndex}`} 
+                  <div
+                    key={`${partner.name}-${setIndex}`}
                     className="flex h-20 w-40 flex-shrink-0 items-center justify-center"
                   >
                     <Image
