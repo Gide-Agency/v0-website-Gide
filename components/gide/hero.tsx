@@ -14,7 +14,7 @@ export function Hero() {
         </div>
 
         <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-          Executive questions to structured analysis.
+          AI for Analysts.
         </h1>
 
         <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
