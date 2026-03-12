@@ -23,7 +23,7 @@ export function Hero() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://calendly.com/harald-gideagency/15plus"
+            href="https://calendly.com/harald-gideagency/25plus"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-md bg-primary px-7 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
