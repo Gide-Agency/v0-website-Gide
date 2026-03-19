@@ -141,7 +141,8 @@ export function WhoWeAre() {
                       alt={partner.name}
                       width={160}
                       height={80}
-                      className="h-auto max-h-16 w-auto max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                      style={{ width: 'auto', height: 'auto' }}
+                      className="max-h-16 max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
                     />
                   </div>
                 ))

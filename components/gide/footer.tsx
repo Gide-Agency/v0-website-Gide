@@ -42,13 +42,21 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-2 sm:items-end">
-            <p className="text-xs text-muted-foreground">
-              {"© "}{new Date().getFullYear()} Gide Oy. All rights reserved.
-            </p>
-            <a href="/terms-privacy" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              Terms & Privacy
-            </a>
+          <div className="flex flex-col-reverse items-center gap-4 sm:flex-row sm:items-center">            <Image
+            src="/images/gdpr-emblem.png"
+            alt="GDPR Compliant"
+            width={40}
+            height={40}
+            className="h-10 w-10 object-contain opacity-60"
+          />
+            <div className="flex flex-col items-center gap-1 sm:items-end">
+              <p className="text-xs text-muted-foreground">
+                {"© "}{new Date().getFullYear()} Gide Oy. All rights reserved.
+              </p>
+              <a href="/policies" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+                Policies
+              </a>
+            </div>
           </div>
         </div>
       </div>
