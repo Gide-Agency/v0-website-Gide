@@ -43,9 +43,18 @@ export function Footer() {
             </div>
           </div>
           <div className="flex flex-col items-center gap-2 sm:items-end">
-            <p className="text-xs text-muted-foreground">
-              {"© "}{new Date().getFullYear()} Gide Oy. All rights reserved.
-            </p>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/gdpr-emblem.png"
+                alt="GDPR Compliant"
+                width={32}
+                height={32}
+                className="h-8 w-8 object-contain opacity-60"
+              />
+              <p className="text-xs text-muted-foreground">
+                {"© "}{new Date().getFullYear()} Gide Oy. All rights reserved.
+              </p>
+            </div>
             <a href="/terms-privacy" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
               Terms & Privacy
             </a>
