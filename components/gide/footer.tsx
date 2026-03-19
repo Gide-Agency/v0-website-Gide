@@ -53,8 +53,8 @@ export function Footer() {
               <p className="text-xs text-muted-foreground">
                 {"© "}{new Date().getFullYear()} Gide Oy. All rights reserved.
               </p>
-              <a href="/terms-privacy" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-                Terms & Privacy
+              <a href="/policies" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+                Policies
               </a>
             </div>
           </div>
