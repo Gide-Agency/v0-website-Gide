@@ -14,11 +14,13 @@ export function Hero() {
         </div>
 
         <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-          AI for Analysts.
+          Stop guessing. Start operating on <span className="text-blue-500">reality.</span>
         </h1>
 
         <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-          Surface the data sources and derive the analytical path to deliver more auditable answers.
+          Your company already has the data.
+          <br />
+          What it doesn't have is a system that knows what's true, connects it, and drives decisions from it.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

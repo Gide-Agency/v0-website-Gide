@@ -1,23 +1,21 @@
-import { Search, MessageSquareText, GitBranch } from "lucide-react"
-
 const features = [
   {
-    icon: MessageSquareText,
-    title: "Clarify the Question",
+    number: "01",
+    title: 'End the "which dashboard is right?" meeting',
     description:
-      "Turn vague business requests into clear analytical problems.",
+      "Gide detects when your systems disagree — before the number reaches a decision-maker. No more two slides with different revenue figures. One truth, with proof.",
   },
   {
-    icon: Search,
-    title: "Find the Right Data",
+    number: "02",
+    title: "Every number carries a chain of evidence",
     description:
-      "Locate relevant sources across fragmented systems.",
+      "Click any insight and see exactly where it came from — through every data source, transformation, and assumption. Your CFO doesn't have to trust you. They can verify.",
   },
   {
-    icon: GitBranch,
-    title: "Structure the Analysis",
+    number: "03",
+    title: "From one-off analysis to continuous system",
     description:
-      "Build a defensible, traceable process that leads to reliable answers.",
+      "No more rebuilding context. No more repeating work. Every decision is tracked, compared to reality over time, and updated when conditions change. Your intelligence compounds.",
   },
 ]
 
@@ -27,23 +25,28 @@ export function WhatGideDoes() {
       <div className="mx-auto max-w-6xl">
         <div className="mb-16 max-w-2xl">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            What Gide does
+            What changes with Gide
           </p>
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            From ambiguity to clarity
+            Your analyst becomes the most trusted person in the room.
           </h2>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            Other tools make data work faster. Gide makes data work{" "}
+            <em>trustworthy</em>. That&apos;s the difference between an answer and a
+            decision.
+          </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-1 max-w-2xl">
           {features.map((feature) => (
             <div
-              key={feature.title}
-              className="group rounded-lg border border-border bg-card p-8 transition-colors hover:border-foreground/20"
+              key={feature.number}
+              className="rounded-lg border border-border bg-card p-8"
             >
-              <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-md bg-muted text-muted-foreground">
-                <feature.icon className="h-5 w-5" />
-              </div>
-              <h3 className="mb-3 font-serif text-xl text-card-foreground">
+              <p className="mb-4 font-serif text-4xl text-blue-600">
+                {feature.number}
+              </p>
+              <h3 className="mb-3 font-serif text-xl font-bold text-card-foreground">
                 {feature.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
