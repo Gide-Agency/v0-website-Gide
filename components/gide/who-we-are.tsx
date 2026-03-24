@@ -139,24 +139,26 @@ export function WhoWeAre() {
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-48 bg-gradient-to-l from-background to-transparent" />
 
             {/* Scrolling container */}
-            <div className="flex animate-scroll-left gap-6 md:gap-16 hover:[animation-play-state:paused]">
-              {/* Multiple sets for seamless infinite loop */}
+            <div className="flex gap-6 md:gap-16 animate-scroll-left hover:[animation-play-state:paused]">
+              {/* Two identical sets for seamless loop */}
               {[...Array(2)].map((_, setIndex) => (
-                partners.map((partner) => (
-                  <div
-                    key={`${partner.name}-${setIndex}`}
-                    className="flex h-20 w-40 flex-shrink-0 items-center justify-center"
-                  >
-                    <Image
-                      src={partner.logo}
-                      alt={partner.name}
-                      width={160}
-                      height={80}
-                      style={{ width: 'auto', height: 'auto' }}
-                      className="max-h-16 max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                    />
-                  </div>
-                ))
+                <div key={setIndex} className="flex shrink-0 gap-6 md:gap-16">
+                  {partners.map((partner) => (
+                    <div
+                      key={`${partner.name}-${setIndex}`}
+                      className="flex h-20 w-40 flex-shrink-0 items-center justify-center"
+                    >
+                      <Image
+                        src={partner.logo}
+                        alt={partner.name}
+                        width={160}
+                        height={80}
+                        style={{ width: 'auto', height: 'auto' }}
+                        className="max-h-16 max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                      />
+                    </div>
+                  ))}
+                </div>
               ))}
             </div>
           </div>
