@@ -10,7 +10,7 @@ export default function PoliciesPage() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <main className="mx-auto max-w-4xl px-6 py-20">
+      <main className="mx-auto max-w-4xl px-6 pt-32 pb-20">
         {/* GDPR & Data Protection */}
         <section className="mb-16">
           <h1 className="mb-2 font-serif text-4xl tracking-tight text-foreground">

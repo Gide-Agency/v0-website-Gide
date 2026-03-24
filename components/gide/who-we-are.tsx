@@ -109,7 +109,7 @@ export function WhoWeAre() {
           <h3 className="mb-8 font-serif text-xl text-foreground">
             Our values
           </h3>
-          <div className="space-y-6 max-w-xl">
+          <div className="grid grid-cols-2 gap-6">
             {values.map((value) => (
               <div
                 key={value.title}
@@ -135,8 +135,8 @@ export function WhoWeAre() {
           </h3>
           <div className="relative overflow-hidden">
             {/* Fade effect on sides */}
-            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-background to-transparent" />
-            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-background to-transparent" />
+            <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-48 bg-gradient-to-r from-background to-transparent" />
+            <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-48 bg-gradient-to-l from-background to-transparent" />
 
             {/* Scrolling container */}
             <div className="flex animate-scroll-left gap-16 hover:[animation-play-state:paused]">
