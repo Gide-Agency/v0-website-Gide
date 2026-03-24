@@ -154,25 +154,27 @@ export function WhoWeAre() {
             <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-48 bg-gradient-to-r from-background to-transparent" />
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-48 bg-gradient-to-l from-background to-transparent" />
 
-            {/* Scrolling container */}
-            <div className="inline-flex w-max animate-scroll-left gap-12 hover:[animation-play-state:paused]">
-              {[...Array(4)].flatMap((_, setIndex) =>
-                partners.map((partner) => (
-                  <div
-                    key={`${partner.name}-${setIndex}`}
-                    className="flex h-20 w-40 flex-shrink-0 items-center justify-center"
-                  >
-                    <Image
-                      src={partner.logo}
-                      alt={partner.name}
-                      width={160}
-                      height={80}
-                      style={{ width: 'auto', height: 'auto' }}
-                      className="max-h-16 max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                    />
-                  </div>
-                ))
-              )
+            {/* Scrolling container — two identical halves, no outer gap */}
+            <div className="animate-scroll-left flex hover:[animation-play-state:paused]" style={{ width: 'max-content' }}>
+              {[0, 1].map((setIndex) => (
+                <div key={setIndex} className="flex shrink-0 gap-12 pr-12">
+                  {partners.map((partner) => (
+                    <div
+                      key={`${partner.name}-${setIndex}`}
+                      className="flex h-20 w-40 flex-shrink-0 items-center justify-center"
+                    >
+                      <Image
+                        src={partner.logo}
+                        alt={partner.name}
+                        width={160}
+                        height={80}
+                        style={{ width: 'auto', height: 'auto' }}
+                        className="max-h-16 max-w-full object-contain opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>
