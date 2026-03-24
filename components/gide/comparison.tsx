@@ -1,69 +1,68 @@
 import { X, CheckCircle2 } from "lucide-react"
 
 const copilotWeaknesses = [
-  "No source tracing",
-  "No conflict detection",
-  "No business definition awareness",
-  "Each query starts from zero",
-  "Hallucinations pass every security check",
+  "No source tracing — can't show where numbers came from",
+  "No conflict detection — doesn't know your ERP and CRM disagree",
+  'No definition awareness — "revenue" means whatever it guesses',
+  "No memory — every query starts from zero",
+  "No governance — hallucinations pass every security check",
 ]
 
 const gideStrengths = [
-  "Full provenance on every insight",
-  "Automatic conflict detection",
-  "Enforces your metric definitions",
-  "Each analysis compounds knowledge",
-  "Governed — LLM proposes, system validates",
+  "Full provenance — click any number, see the entire chain",
+  "Conflict detection — catches discrepancies before they reach leadership",
+  "Definition enforcement — your metrics, your rules, system-wide",
+  "Decision memory — tracks commitments and compares to reality",
+  "Governed pipeline — LLM proposes, system validates, you decide",
 ]
 
 export function Comparison() {
   return (
-    <section className="bg-[#0a0a0a] px-6 py-24 md:py-32 text-white">
-      <div className="mx-auto max-w-3xl">
-        <p className="mb-3 text-sm font-medium uppercase tracking-widest text-neutral-400">
-          This is not another copilot
+    <section className="bg-foreground px-6 py-24 md:py-32 text-white">
+      <div className="mx-auto max-w-6xl">
+        <p className="mb-3 font-mono text-[0.625rem] font-medium uppercase tracking-[0.2em] text-white/35">
+          This is not another AI assistant
         </p>
         <h2 className="font-serif text-3xl tracking-tight sm:text-4xl md:text-5xl text-balance">
-          Copilot gives you an answer.
+          Copilot generates answers.
           <br />
-          Gide gives you the truth — with proof.
+          Gide governs reality.
         </h2>
-        <p className="mt-6 text-base leading-relaxed text-neutral-400">
-          AI assistants are fast. But fast and wrong is worse than slow and{" "}
-          <em>right</em>. Here&apos;s what&apos;s fundamentally different.
+        <p className="mt-6 text-[0.9375rem] leading-relaxed text-white/50">
+          AI assistants are fast. But speed without truth is just faster
+          mistakes. Here&apos;s what&apos;s fundamentally different.
         </p>
 
-        <div className="mt-12 space-y-8">
-          {/* AI Copilots / Chatbots */}
-          <div className="rounded-lg border border-neutral-800 bg-neutral-900 p-8">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-neutral-800 px-4 py-1.5">
-              <div className="h-2 w-2 rounded-full bg-red-500" />
-              <span className="text-xs font-medium uppercase tracking-widest text-neutral-300">
-                AI Copilots / Chatbots
+        <div className="mt-12 grid gap-0 md:grid-cols-2">
+          {/* AI Copilots & Chatbots */}
+          <div className="border border-white/[0.07] p-10">
+            <div className="mb-6 flex items-center gap-2.5">
+              <div className="h-1.5 w-1.5 rounded-full bg-red-500" />
+              <span className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.2em]">
+                AI copilots &amp; chatbots
               </span>
             </div>
 
-            <h3 className="mb-4 font-serif text-2xl font-bold">
-              Confident. Unverifiable.
+            <h3 className="mb-4 font-serif text-2xl leading-tight">
+              Confident. Unverifiable. Amnesiac.
             </h3>
 
-            <p className="text-base leading-relaxed text-neutral-400">
+            <p className="text-[0.9375rem] leading-[1.8] text-white/55">
               They give you a number in seconds. But they don&apos;t know your
-              company&apos;s definitions. They can&apos;t tell you where the
-              number came from. They can&apos;t detect when two systems
-              disagree.{" "}
-              <strong className="text-red-400">
+              definitions. They can&apos;t detect when systems disagree. They
+              don&apos;t remember last week&apos;s decision.{" "}
+              <strong className="font-semibold text-white">
                 They sound right even when they&apos;re wrong.
               </strong>
             </p>
 
-            <ul className="mt-6 space-y-3">
+            <ul className="mt-5">
               {copilotWeaknesses.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-3 text-sm text-neutral-400"
+                  className="flex items-center gap-2.5 py-1.5 text-[0.8125rem] text-white/40"
                 >
-                  <X className="h-4 w-4 flex-shrink-0 text-neutral-600" />
+                  <X className="h-3.5 w-3.5 flex-shrink-0 text-white/25" />
                   {item}
                 </li>
               ))}
@@ -71,37 +70,37 @@ export function Comparison() {
           </div>
 
           {/* Gide */}
-          <div className="rounded-lg border border-blue-500/30 bg-neutral-900 p-8">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-neutral-800 px-4 py-1.5">
-              <div className="h-2 w-2 rounded-full bg-blue-500" />
-              <span className="text-xs font-medium uppercase tracking-widest text-neutral-300">
+          <div className="border border-blue-600/15 bg-blue-600/[0.06] p-10">
+            <div className="mb-6 flex items-center gap-2.5">
+              <div className="h-1.5 w-1.5 rounded-full bg-blue-500" />
+              <span className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.2em]">
                 Gide
               </span>
             </div>
 
-            <h3 className="mb-4 font-serif text-2xl font-bold">
-              Correct. Provable. Governed.
+            <h3 className="mb-4 font-serif text-2xl leading-tight">
+              Governed. Provable. Compounding.
             </h3>
 
-            <p className="text-base leading-relaxed text-neutral-400">
-              Gide doesn&apos;t just answer — it{" "}
-              <strong className="text-white">
-                shows the entire reasoning chain
+            <p className="text-[0.9375rem] leading-[1.8] text-white/70">
+              Gide doesn&apos;t generate guesses — it{" "}
+              <strong className="font-semibold text-white">
+                constructs verified decisions from your actual data
               </strong>
-              . It knows your definitions. It catches disagreements between
-              systems.{" "}
-              <strong className="text-white">
-                It gives your analyst the evidence to defend every number.
+              . It knows your definitions. It catches disagreements. It tracks
+              decisions over time.{" "}
+              <strong className="font-semibold text-white">
+                Every output is evidence-bound.
               </strong>
             </p>
 
-            <ul className="mt-6 space-y-3">
+            <ul className="mt-5">
               {gideStrengths.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-3 text-sm text-neutral-300"
+                  className="flex items-center gap-2.5 py-1.5 text-[0.8125rem] text-blue-300/90"
                 >
-                  <CheckCircle2 className="h-4 w-4 flex-shrink-0 text-blue-500" />
+                  <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0 text-blue-300" />
                   {item}
                 </li>
               ))}

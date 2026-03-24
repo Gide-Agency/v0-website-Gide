@@ -3,7 +3,7 @@ import { Layers, Clock, RefreshCw, Zap } from "lucide-react"
 const painPoints = [
   {
     icon: Layers,
-    title: "Data scattered across systems that don't talk to each other",
+    title: "Scattered data across systems that don't communicate",
     description:
       "You spend hours figuring out which number is right before the real work even starts.",
   },
