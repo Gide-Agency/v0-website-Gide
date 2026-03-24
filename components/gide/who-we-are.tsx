@@ -20,6 +20,22 @@ const partners = [
     name: "Helsinki",
     logo: "/images/partners/helsinki.png",
   },
+  {
+    name: "NVIDIA Inception Program 2",
+    logo: "/images/partners/nvidia-inception.png",
+  },
+  {
+    name: "EDISS 2",
+    logo: "/images/partners/ediss-masters.jpg",
+  },
+  {
+    name: "Hanken 2",
+    logo: "/images/partners/hanken.png",
+  },
+  {
+    name: "Helsinki 2",
+    logo: "/images/partners/helsinki.png",
+  },
 ]
 
 const values = [
