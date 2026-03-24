@@ -139,7 +139,7 @@ export function WhoWeAre() {
             <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-48 bg-gradient-to-l from-background to-transparent" />
 
             {/* Scrolling container */}
-            <div className="flex animate-scroll-left gap-16 hover:[animation-play-state:paused]">
+            <div className="flex animate-scroll-left gap-6 md:gap-16 hover:[animation-play-state:paused]">
               {/* Multiple sets for seamless infinite loop */}
               {[...Array(4)].map((_, setIndex) => (
                 partners.map((partner) => (

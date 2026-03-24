@@ -15,7 +15,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="mx-auto grid max-w-6xl grid-cols-[auto_1fr_auto] items-center px-6 py-4">
         <div className="flex items-center">
           <a href="#" className="block">
@@ -69,7 +69,7 @@ export function Header() {
 
       {mobileOpen && (
         <nav
-          className="border-t border-border bg-background/90 backdrop-blur-md px-6 pb-6 pt-4 md:hidden"
+          className="border-t border-border px-6 pb-6 pt-4 md:hidden"
           aria-label="Mobile navigation"
         >
           <div className="flex flex-col gap-4">
@@ -84,13 +84,13 @@ export function Header() {
               </a>
             ))}
             <a
-              href="https://calendly.com/harald-gideagency/15plus"
+              href="https://early-gide-demo.lovable.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block rounded-md bg-primary px-5 py-2 text-center text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              className="mt-2 inline-block rounded-md bg-foreground px-5 py-2 text-center text-sm font-medium text-background transition-colors hover:bg-foreground/80"
               onClick={() => setMobileOpen(false)}
             >
-              Try for free
+              Test live demo
             </a>
           </div>
         </nav>
