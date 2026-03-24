@@ -78,11 +78,11 @@ export function WhatBecomesPossible() {
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="rounded-lg border border-border bg-card divide-y divide-border">
           {scenarios.map((scenario) => (
             <div
               key={scenario.label}
-              className="rounded-lg border border-border bg-card p-8"
+              className="p-8"
             >
               <div className="pb-6">
                 <p className={`mb-3 text-xs font-medium uppercase tracking-widest ${scenario.labelColor}`}>

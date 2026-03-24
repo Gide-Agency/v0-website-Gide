@@ -9,7 +9,6 @@ const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
   { label: "Who It's For", href: "#who-its-for" },
   { label: "Who we are", href: "#who-we-are" },
-  { label: "Trust", href: "#trust" },
 ]
 
 export function Header() {
@@ -48,7 +47,7 @@ export function Header() {
 
         <div className="hidden items-center justify-end md:flex">
           <a
-            href="https://live-demo.gideagency.com/"
+            href="https://early-gide-demo.lovable.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/80"

@@ -30,7 +30,7 @@ const trustItems = [
 export function Trust() {
   return (
     <section id="trust" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-xl">
+      <div className="mx-auto max-w-3xl">
         <div className="mb-16 text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             Trust & Governance

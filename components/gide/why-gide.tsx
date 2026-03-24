@@ -56,13 +56,19 @@ export function WhyGide() {
                   : "border-border bg-card"
               }`}
             >
-              <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              <p className={`mb-3 text-xs font-medium uppercase tracking-widest ${
+                approach.highlight ? "text-blue-600" : "text-muted-foreground"
+              }`}>
                 {approach.label}
               </p>
-              <h3 className="mb-3 font-serif text-xl text-foreground">
+              <h3 className={`mb-3 text-xl text-foreground ${
+                approach.highlight ? "font-mono" : "font-serif"
+              }`}>
                 {approach.title}
               </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
+              <p className={`text-sm leading-relaxed ${
+                approach.highlight ? "font-mono text-muted-foreground" : "text-muted-foreground"
+              }`}>
                 {approach.description}
               </p>
               <ul className="mt-4 space-y-2">

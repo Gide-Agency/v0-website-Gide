@@ -22,7 +22,7 @@ const features = [
 export function WhatGideDoes() {
   return (
     <section id="what-gide-does" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-3xl">
         <div className="mb-16 max-w-2xl">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             What changes with Gide

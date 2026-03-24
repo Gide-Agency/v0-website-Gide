@@ -52,7 +52,7 @@ const values = [
 export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-3xl">
         <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
