@@ -19,6 +19,10 @@ export function Scenario() {
               </span>
             </div>
 
+            <h3 className="mb-4 font-serif text-2xl leading-tight">
+              Confident. Unverifiable. Amnesiac.
+            </h3>
+
             <p className="text-[0.9375rem] leading-[1.8] text-white/55">
               Three hours pulling data from your ERP, CRM, and two
               spreadsheets. The ERP says margins are down 4%. The CRM data
@@ -43,6 +47,10 @@ export function Scenario() {
                 With Gide
               </span>
             </div>
+
+            <h3 className="mb-4 font-serif text-2xl leading-tight">
+              True. Provable. Governed.
+            </h3>
 
             <p className="text-[0.9375rem] leading-[1.8] text-white/70">
               You ask the question. Gide pulls from both systems,{" "}

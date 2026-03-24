@@ -1,6 +1,7 @@
 const scenarios = [
   {
     label: "You ask",
+    labelColor: "text-blue-600",
     title: '"Why is revenue down in Germany?"',
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
@@ -19,6 +20,7 @@ const scenarios = [
   },
   {
     label: "You decide",
+    labelColor: "text-green-600",
     title: '"Increase sales investment in Germany by €500K"',
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
@@ -37,6 +39,7 @@ const scenarios = [
   },
   {
     label: "Reality shifts",
+    labelColor: "text-amber-600",
     title: "Pipeline grew 12% but close rate dropped 40%",
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
@@ -81,7 +84,7 @@ export function WhatBecomesPossible() {
               key={scenario.label}
               className="rounded-lg border border-border bg-card p-8"
             >
-              <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              <p className={`mb-3 text-xs font-medium uppercase tracking-widest ${scenario.labelColor}`}>
                 {scenario.label}
               </p>
               <h3 className="mb-6 font-serif text-xl font-bold text-foreground">

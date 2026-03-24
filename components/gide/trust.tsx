@@ -9,7 +9,7 @@ const trustItems = [
   },
   {
     icon: Link2,
-    title: "Every source linked",
+    title: "Every source traced",
     description:
       "Click any result. Follow the evidence chain to the raw data. See exactly how it was derived.",
   },
@@ -36,7 +36,7 @@ export function Trust() {
             Trust & Governance
           </p>
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            Not just transparent. Governed.
+            Not confident. True.
           </h2>
         </div>
 

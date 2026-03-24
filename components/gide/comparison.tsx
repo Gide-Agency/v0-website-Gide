@@ -26,7 +26,7 @@ export function Comparison() {
         <h2 className="font-serif text-3xl tracking-tight sm:text-4xl md:text-5xl text-balance">
           Copilot generates answers.
           <br />
-          Gide governs reality.
+          Gide governs using reality.
         </h2>
         <p className="mt-6 text-[0.9375rem] leading-relaxed text-white/50">
           AI assistants are fast. But speed without truth is just faster
