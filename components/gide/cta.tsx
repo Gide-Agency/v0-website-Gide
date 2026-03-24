@@ -15,10 +15,10 @@ export function CTA() {
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://calendly.com/harald-gideagency/25plus"
+            href="https://early-gide-demo.lovable.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-md bg-foreground px-8 py-3.5 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
+            className="group inline-flex items-center gap-2 rounded-md bg-foreground px-7 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
           >
             Test live demo
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -27,7 +27,7 @@ export function CTA() {
             href="https://calendly.com/harald-gideagency/25plus"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md border border-border px-8 py-3.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+            className="inline-flex items-center gap-2 rounded-md border border-border px-7 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
           >
             Book a walkthrough
           </a>
