@@ -1,52 +1,75 @@
-import { Layers, MessageCircleQuestion, ShieldCheck, Zap } from "lucide-react"
+import { Layers, Clock, RefreshCw, Zap } from "lucide-react"
 
 const painPoints = [
-  { icon: Layers, text: "Identifying correct data across fragmented sources" },
-  { icon: MessageCircleQuestion, text: "Interpreting vague requests before analysis" },
-  { icon: ShieldCheck, text: "Rebuilding context instead of compounding" },
-  { icon: Zap, text: "AI answers without sources or justification" },
+  {
+    icon: Layers,
+    title: "Five systems, five different truths",
+    description:
+      "You spend hours figuring out which number is right before the real work even starts.",
+  },
+  {
+    icon: Clock,
+    title: "Decisions delayed because nobody trusts the data",
+    description:
+      "Leadership won't commit to a strategy when they're not sure the numbers behind it are correct.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Nothing compounds — every analysis starts from scratch",
+    description:
+      "Last month's work doesn't help this month because there's no institutional memory.",
+  },
+  {
+    icon: Zap,
+    title: "AI that sounds confident but can't show its work",
+    description:
+      'When your VP asks "where did this number come from?" — Copilot has nothing. Gide shows the entire chain.',
+  },
 ]
 
 export function WhoItsFor() {
   return (
     <section id="who-its-for" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid gap-10 md:grid-cols-[1fr_1fr] md:gap-14">
-          {/* LEFT: headline + paragraph in the same column (so the column has full height) */}
-          <div className="max-w-2xl">
-            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-              Who it{"'"}s for
-            </p>
+      <div className="mx-auto max-w-3xl">
+        <div className="mb-16 max-w-2xl">
+          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+            Who it&apos;s for
+          </p>
 
-            <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-              Built for the people behind the numbers
-            </h2>
+          <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
+            Built for the analyst everyone depends on.
+          </h2>
+          <p className="mt-2 font-sans text-lg font-bold text-foreground">
+            Whose credibility is on the line.
+          </p>
 
-            {/* controls the spacing between headline and paragraph (replaces mb-16) */}
-            <p className="mt-12 text-base leading-relaxed text-muted-foreground">
-              Gide is built for data analysts and data specialists in small to
-              mid-sized companies who spend large portions of their time
-              collecting, validating, and rebuilding reports instead of
-              analyzing and advising.
-            </p>
-          </div>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            You&apos;re the one who gets the Slack message at 4pm. The one who has
+            to reconcile three systems before you can even start analyzing. The
+            one whose credibility is on the line every time a number reaches
+            leadership.
+          </p>
+        </div>
 
-          {/* RIGHT: vertically centered against the full left column height */}
-          <div className="grid grid-cols-2 gap-3 self-center">
-            {painPoints.map((point) => (
-              <div
-                key={point.text}
-                className="flex items-start gap-3 rounded-lg border border-border bg-card p-4"
-              >
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-secondary text-muted-foreground">
-                  <point.icon className="h-4 w-4" />
-                </div>
-                <p className="text-sm leading-relaxed text-card-foreground">
-                  {point.text}
+        <div className="space-y-4">
+          {painPoints.map((point) => (
+            <div
+              key={point.title}
+              className="flex items-start gap-4 rounded-lg border border-border bg-card p-6"
+            >
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-secondary text-muted-foreground">
+                <point.icon className="h-5 w-5" />
+              </div>
+              <div>
+                <h3 className="mb-1 text-sm font-bold text-card-foreground">
+                  {point.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {point.description}
                 </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { Shield, Scale, Lock } from "lucide-react"
+import { Shield, Link2, Lock, ShieldCheck } from "lucide-react"
 
 const partners = [
   {
@@ -25,21 +25,27 @@ const partners = [
 const values = [
   {
     icon: Shield,
-    title: "Truth by design",
+    title: "Reality outranks coherence",
     description:
-      "Every conclusion is traceable end-to-end, inspectable step by step, and independently verifiable. No hidden assumptions. No black boxes.",
+      "When data contradicts the narrative, the data wins. Gide never optimizes for a clean story over a true one.",
   },
   {
-    icon: Scale,
-    title: "Principles of sovereignty",
+    icon: Link2,
+    title: "Provenance is mandatory",
     description:
-      "Your data never leaves your control and is never reused for model training. Human judgment remains authoritative.",
+      "No insight without a source. No decision without evidence. If it can't be traced, it doesn't ship.",
   },
   {
     icon: Lock,
-    title: "Governance as a foundation",
+    title: "AI proposes. You decide.",
     description:
-      "Ethical constraints, access policies, and business rules are encoded as enforceable system rules, not guidelines.",
+      "Gide generates. The system validates. You approve. Human judgment is authoritative — always and by design.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Sovereign by design",
+    description:
+      "Your data never leaves your control and is never reused for model training. Gide proposes. Human judgment remains authoritative.",
   },
 ]
 
@@ -47,18 +53,28 @@ export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 max-w-2xl">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            Who we are
-          </p>
-          <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            We&apos;re building the governed intelligence layer between your data and your decisions.
-          </h2>
-          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            Gide is not a dashboard. Not a chatbot. Not a BI replacement. It&apos;s
-            the system that maintains a shared, trusted reality across your
-            company — and turns it into decisions that actually execute.
-          </p>
+        <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center">
+          <div className="flex-1">
+            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+              Who we are
+            </p>
+            <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
+              We&apos;re building the governed intelligence layer between your data and your decisions.
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Gide is not a dashboard. Not a chatbot. Not a BI replacement. It&apos;s
+              the system that maintains a shared, trusted reality across your
+              company — and turns it into decisions that actually execute.
+            </p>
+          </div>
+          <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full md:h-56 md:w-56">
+            <Image
+              src="/images/Harald-Helsinki.png"
+              alt="Harald in Helsinki"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -93,7 +109,7 @@ export function WhoWeAre() {
           <h3 className="mb-8 font-serif text-xl text-foreground">
             Our values
           </h3>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="space-y-6 max-w-xl">
             {values.map((value) => (
               <div
                 key={value.title}
@@ -102,7 +118,7 @@ export function WhoWeAre() {
                 <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-md bg-secondary text-muted-foreground">
                   <value.icon className="h-5 w-5" />
                 </div>
-                <h4 className="mb-3 font-serif text-lg text-card-foreground">
+                <h4 className="mb-3 font-serif text-lg font-bold text-card-foreground">
                   {value.title}
                 </h4>
                 <p className="text-sm leading-relaxed text-muted-foreground">
