@@ -6,11 +6,11 @@ const scenarios = [
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
         Gide doesn&apos;t give you a guess. It constructs a{" "}
-        <span className="text-foreground">structured investigation</span> —
+        <span className="font-semibold text-foreground">structured investigation</span> —
         pulling from your ERP, CRM, and pipeline data. It detects that two
         sources define &quot;Germany revenue&quot; differently, reconciles them,
         and delivers the real answer{" "}
-        <span className="text-foreground">
+        <span className="font-semibold text-foreground">
           with the full evidence chain attached.
         </span>
       </p>
@@ -25,10 +25,10 @@ const scenarios = [
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
         Gide records this as a{" "}
-        <span className="text-foreground">commitment</span>. It defines what
+        <span className="font-semibold text-foreground">commitment</span>. It defines what
         should happen — pipeline growth targets, expected close rates, revenue
         trajectory. Then it{" "}
-        <span className="text-foreground">
+        <span className="font-semibold text-foreground">
           tracks what actually happens
         </span>{" "}
         against those expectations, week over week.
@@ -44,9 +44,9 @@ const scenarios = [
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
         Gide detects the{" "}
-        <span className="text-foreground">drift</span> between what was
+        <span className="font-semibold text-foreground">drift</span> between what was
         expected and what happened. It surfaces the deviation with context —{" "}
-        <span className="text-foreground">
+        <span className="font-semibold text-foreground">
           not just that things changed, but why, and what it means for the
           original decision.
         </span>{" "}
