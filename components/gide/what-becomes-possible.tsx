@@ -67,9 +67,9 @@ export function WhatBecomesPossible() {
             What becomes possible
           </p>
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            Not faster answers.
+            Not only faster decisions.
             <br />
-            A new operating model.
+            A new era operating model.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
             When every decision is grounded in verified data and tracked over

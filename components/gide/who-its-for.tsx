@@ -39,10 +39,6 @@ export function WhoItsFor() {
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
             Built for the analyst everyone depends on.
           </h2>
-          <p className="mt-2 font-sans text-lg font-bold text-foreground">
-            Whose credibility is on the line.
-          </p>
-
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
             You&apos;re the one who gets the Slack message at 4pm. The one who has
             to reconcile three systems before you can even start analyzing. The

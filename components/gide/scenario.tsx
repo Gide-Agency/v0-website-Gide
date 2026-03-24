@@ -12,9 +12,9 @@ export function Scenario() {
         <div className="mt-12 grid gap-0 md:grid-cols-2">
           {/* Without Gide */}
           <div className="border border-white/[0.07] p-10">
-            <div className="mb-6 flex items-center gap-2.5">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/10 px-4 py-1.5">
               <div className="h-1.5 w-1.5 rounded-full bg-red-500" />
-              <span className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.2em]">
+              <span className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.2em] text-red-400">
                 Without Gide
               </span>
             </div>
@@ -41,9 +41,9 @@ export function Scenario() {
 
           {/* With Gide */}
           <div className="border border-blue-600/15 bg-blue-600/[0.06] p-10">
-            <div className="mb-6 flex items-center gap-2.5">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-1.5">
               <div className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-              <span className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.2em]">
+              <span className="font-mono text-[0.625rem] font-medium uppercase tracking-[0.2em] text-blue-400">
                 With Gide
               </span>
             </div>
