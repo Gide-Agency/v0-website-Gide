@@ -6,13 +6,13 @@ const scenarios = [
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
         Gide doesn&apos;t give you a guess. It constructs a{" "}
-        <strong className="text-foreground">structured investigation</strong> —
+        <span className="text-foreground">structured investigation</span> —
         pulling from your ERP, CRM, and pipeline data. It detects that two
         sources define &quot;Germany revenue&quot; differently, reconciles them,
         and delivers the real answer{" "}
-        <strong className="text-foreground">
+        <span className="text-foreground">
           with the full evidence chain attached.
-        </strong>
+        </span>
       </p>
     ),
     callout: "Not an answer. A governed investigation with a decision path.",
@@ -25,12 +25,12 @@ const scenarios = [
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
         Gide records this as a{" "}
-        <strong className="text-foreground">commitment</strong>. It defines what
+        <span className="text-foreground">commitment</span>. It defines what
         should happen — pipeline growth targets, expected close rates, revenue
         trajectory. Then it{" "}
-        <strong className="text-foreground">
+        <span className="text-foreground">
           tracks what actually happens
-        </strong>{" "}
+        </span>{" "}
         against those expectations, week over week.
       </p>
     ),
@@ -44,12 +44,12 @@ const scenarios = [
     body: (
       <p className="text-base leading-relaxed text-muted-foreground">
         Gide detects the{" "}
-        <strong className="text-foreground">drift</strong> between what was
+        <span className="text-foreground">drift</span> between what was
         expected and what happened. It surfaces the deviation with context —{" "}
-        <strong className="text-foreground">
+        <span className="text-foreground">
           not just that things changed, but why, and what it means for the
           original decision.
-        </strong>{" "}
+        </span>{" "}
         It forces re-evaluation before the quarter closes.
       </p>
     ),
@@ -87,7 +87,7 @@ export function WhatBecomesPossible() {
               <p className={`mb-3 text-xs font-medium uppercase tracking-widest ${scenario.labelColor}`}>
                 {scenario.label}
               </p>
-              <h3 className="mb-6 font-serif text-xl font-bold text-foreground">
+              <h3 className="mb-6 font-serif text-xl text-foreground">
                 {scenario.title}
               </h3>
               {scenario.body}

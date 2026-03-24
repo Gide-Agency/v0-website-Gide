@@ -51,7 +51,7 @@ export function Header() {
             href="https://live-demo.gideagency.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            className="rounded-full bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
           >
             Test live demo
           </a>

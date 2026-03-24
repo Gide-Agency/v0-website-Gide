@@ -53,7 +53,7 @@ export function StructuredPath() {
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-foreground text-sm font-medium text-background">
                 {step.number}
               </div>
-              <h3 className="mb-1 font-serif text-xl font-bold text-foreground">
+              <h3 className="mb-1 font-serif text-xl text-foreground">
                 {step.title}
               </h3>
               <p className="mb-2 text-sm italic text-muted-foreground">

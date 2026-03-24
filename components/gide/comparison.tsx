@@ -51,9 +51,9 @@ export function Comparison() {
               They give you a number in seconds. But they don&apos;t know your
               definitions. They can&apos;t detect when systems disagree. They
               don&apos;t remember last week&apos;s decision.{" "}
-              <strong className="font-semibold text-white">
+              <span className="text-white">
                 They sound right even when they&apos;re wrong.
-              </strong>
+              </span>
             </p>
 
             <ul className="mt-5">
@@ -84,14 +84,14 @@ export function Comparison() {
 
             <p className="text-[0.9375rem] leading-[1.8] text-white/70">
               Gide doesn&apos;t generate guesses — it{" "}
-              <strong className="font-semibold text-white">
+              <span className="text-white">
                 constructs verified decisions from your actual data
-              </strong>
+              </span>
               . It knows your definitions. It catches disagreements. It tracks
               decisions over time.{" "}
-              <strong className="font-semibold text-white">
+              <span className="text-white">
                 Every output is evidence-bound.
-              </strong>
+              </span>
             </p>
 
             <ul className="mt-5">

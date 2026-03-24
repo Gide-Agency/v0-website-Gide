@@ -27,15 +27,15 @@ export function Scenario() {
               Three hours pulling data from your ERP, CRM, and two
               spreadsheets. The ERP says margins are down 4%. The CRM data
               implies 2%.{" "}
-              <strong className="font-semibold text-white">
+              <span className="text-white">
                 You don&apos;t know which is right.
-              </strong>
+              </span>
             </p>
 
             <p className="mt-4 text-[0.9375rem] leading-[1.8] text-white/55">
               You send the number you trust more and hope nobody asks how you
               got it.{" "}
-              <strong className="font-semibold text-white">They will.</strong>
+              <span className="text-white">They will.</span>
             </p>
           </div>
 
@@ -54,17 +54,17 @@ export function Scenario() {
 
             <p className="text-[0.9375rem] leading-[1.8] text-white/70">
               You ask the question. Gide pulls from both systems,{" "}
-              <strong className="font-semibold text-white">
+              <span className="text-white">
                 detects the 2% discrepancy, and explains why
-              </strong>{" "}
+              </span>{" "}
               — a one-time revenue event was miscategorized as recurring.
             </p>
 
             <p className="mt-4 text-[0.9375rem] leading-[1.8] text-white/70">
               You send the correct number with the full evidence chain.{" "}
-              <strong className="font-semibold text-white">
+              <span className="text-white">
                 Your CEO shares it with the board. Nobody questions it.
-              </strong>
+              </span>
             </p>
           </div>
         </div>

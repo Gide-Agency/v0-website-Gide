@@ -49,7 +49,7 @@ export function Trust() {
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-border bg-secondary text-muted-foreground">
                 <item.icon className="h-5 w-5" />
               </div>
-              <h3 className="mb-2 font-serif text-lg font-bold text-card-foreground">
+              <h3 className="mb-2 font-serif text-lg text-card-foreground">
                 {item.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">

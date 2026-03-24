@@ -59,7 +59,7 @@ export function WhyGide() {
               <p className="mb-3 text-xs font-medium uppercase tracking-widest text-muted-foreground">
                 {approach.label}
               </p>
-              <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
+              <h3 className="mb-3 font-serif text-xl text-foreground">
                 {approach.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">

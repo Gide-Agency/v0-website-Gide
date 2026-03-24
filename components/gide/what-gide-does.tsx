@@ -46,7 +46,7 @@ export function WhatGideDoes() {
               <p className="mb-4 font-serif text-4xl text-blue-600">
                 {feature.number}
               </p>
-              <h3 className="mb-3 font-serif text-xl font-bold text-card-foreground">
+              <h3 className="mb-3 font-serif text-xl text-card-foreground">
                 {feature.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">

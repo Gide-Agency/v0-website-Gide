@@ -57,7 +57,7 @@ export function WhoItsFor() {
                 <point.icon className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="mb-1 text-sm font-bold text-card-foreground">
+                <h3 className="mb-1 text-sm font-medium text-card-foreground">
                   {point.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">

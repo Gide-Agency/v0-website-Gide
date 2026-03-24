@@ -52,7 +52,7 @@ export function HowItWorks() {
               <p className="mb-3 text-sm font-medium uppercase tracking-widest text-blue-600">
                 {step.number}
               </p>
-              <h3 className="mb-3 font-serif text-xl font-bold text-card-foreground">
+              <h3 className="mb-3 font-serif text-xl text-card-foreground">
                 {step.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
