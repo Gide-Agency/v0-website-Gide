@@ -2,6 +2,7 @@ import { Header } from "@/components/gide/header"
 import { Hero } from "@/components/gide/hero"
 import { WhatGideDoes } from "@/components/gide/what-gide-does"
 import { Scenario } from "@/components/gide/scenario"
+import { Comparison } from "@/components/gide/comparison"
 import { HowItWorks } from "@/components/gide/how-it-works"
 import { WhoItsFor } from "@/components/gide/who-its-for"
 import { WhoWeAre } from "@/components/gide/who-we-are"
@@ -27,6 +28,7 @@ export default function Page() {
         <WhatGideDoes />
         <Divider />
         <Scenario />
+        <Comparison />
         <Divider />
         <HowItWorks />
         <Divider />

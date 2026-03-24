@@ -1,68 +1,63 @@
 const steps = [
   {
-    number: "01",
-    title: "Define question",
+    number: "Step 01",
+    title: "Decision Intent",
     description:
-      "Translate a business request into a precise, structured analytical question.",
+      "Translates a vague business question into a precise, structured analytical problem with clear scope.",
   },
   {
-    number: "02",
-    title: "Identify required data",
+    number: "Step 02",
+    title: "Data Contract",
     description:
-      "Map the question to the data sources, metrics, and dimensions needed to answer it.",
+      "Maps the question to required sources, metrics, and definitions — and surfaces any conflicts between them.",
   },
   {
-    number: "03",
-    title: "Validate sources",
+    number: "Step 03",
+    title: "Blueprint",
     description:
-      "Check data quality, recency, and consistency across all connected systems.",
+      "Validates data quality, recency, and consistency. Builds the analysis path with every assumption explicit.",
   },
   {
-    number: "04",
-    title: "Interpret results",
+    number: "Step 04",
+    title: "Insight",
     description:
-      "Structure the output so that conclusions are traceable back to every input.",
+      "Delivers the answer with full provenance — every conclusion traceable to every input, ready for the board.",
   },
 ]
 
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-3xl">
         <div className="mb-16 max-w-2xl">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             How it works
           </p>
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            A structured path to reliable answers
+            Four steps. Extracting truth.
           </h2>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            Gide doesn&apos;t just generate answers — it constructs them through
+            a validated pipeline where every step is visible and every output is
+            checked.
+          </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-4 md:gap-6">
-          {steps.map((step, index) => (
-            <div key={step.number} className="relative flex gap-5 md:flex-col md:gap-0">
-              {/* Connector line */}
-              {index < steps.length - 1 && (
-                <>
-                  <div className="absolute top-5 left-10 right-0 hidden h-px bg-border md:block" />
-                  <div className="absolute top-10 bottom-0 left-5 w-px bg-border md:hidden" />
-                </>
-              )}
-
-              {/* Step number circle */}
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-primary/20 bg-primary text-sm font-medium text-primary-foreground">
+        <div className="space-y-6">
+          {steps.map((step) => (
+            <div
+              key={step.number}
+              className="rounded-lg border border-border bg-card p-8"
+            >
+              <p className="mb-3 text-sm font-medium uppercase tracking-widest text-blue-600">
                 {step.number}
-              </div>
-
-              {/* Step content */}
-              <div className="md:mt-6">
-                <h3 className="mb-2 font-serif text-lg text-foreground">
-                  {step.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {step.description}
-                </p>
-              </div>
+              </p>
+              <h3 className="mb-3 font-serif text-xl font-bold text-card-foreground">
+                {step.title}
+              </h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>
