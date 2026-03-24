@@ -71,7 +71,7 @@ export function Comparison() {
           </div>
 
           {/* Gide */}
-          <div className="rounded-lg border border-neutral-800 bg-neutral-900 p-8">
+          <div className="rounded-lg border border-blue-500/30 bg-neutral-900 p-8">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-neutral-800 px-4 py-1.5">
               <div className="h-2 w-2 rounded-full bg-blue-500" />
               <span className="text-xs font-medium uppercase tracking-widest text-neutral-300">

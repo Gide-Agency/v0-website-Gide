@@ -3,7 +3,7 @@ import { Layers, Clock, RefreshCw, Zap } from "lucide-react"
 const painPoints = [
   {
     icon: Layers,
-    title: "Five systems, five different truths",
+    title: "Data scattered across systems that don't talk to each other",
     description:
       "You spend hours figuring out which number is right before the real work even starts.",
   },
@@ -15,7 +15,7 @@ const painPoints = [
   },
   {
     icon: RefreshCw,
-    title: "Nothing compounds — every analysis starts from scratch",
+    title: "Rebuilding context every time & nothing compounds",
     description:
       "Last month's work doesn't help this month because there's no institutional memory.",
   },
