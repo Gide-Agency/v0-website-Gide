@@ -5,7 +5,7 @@
 
 /* Light mode - brand white background */
 :root {
-  --background: #f5f3f5;
+  --background: #fafafa;
   --foreground: oklch(0.15 0.005 260);
   --card: #ffffff;
   --card-foreground: oklch(0.15 0.005 260);
