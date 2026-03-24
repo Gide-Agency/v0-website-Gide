@@ -141,7 +141,7 @@ export function WhoWeAre() {
             {/* Scrolling container */}
             <div className="flex animate-scroll-left gap-6 md:gap-16 hover:[animation-play-state:paused]">
               {/* Multiple sets for seamless infinite loop */}
-              {[...Array(8)].map((_, setIndex) => (
+              {[...Array(2)].map((_, setIndex) => (
                 partners.map((partner) => (
                   <div
                     key={`${partner.name}-${setIndex}`}
