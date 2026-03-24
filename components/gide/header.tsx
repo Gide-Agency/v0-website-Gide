@@ -69,7 +69,7 @@ export function Header() {
 
       {mobileOpen && (
         <nav
-          className="border-t border-border bg-background px-6 pb-6 pt-4 md:hidden"
+          className="border-t border-border bg-background/90 backdrop-blur-md px-6 pb-6 pt-4 md:hidden"
           aria-label="Mobile navigation"
         >
           <div className="flex flex-col gap-4">

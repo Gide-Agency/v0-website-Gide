@@ -1,19 +1,19 @@
 import { X, CheckCircle2 } from "lucide-react"
 
 const copilotWeaknesses = [
-  "No source tracing — can't show where numbers came from",
-  "No conflict detection — doesn't know your ERP and CRM disagree",
-  'No definition awareness — "revenue" means whatever it guesses',
-  "No memory — every query starts from zero",
-  "No governance — hallucinations pass every security check",
+  "No source tracing - can't show where numbers came from",
+  "No conflict detection - doesn't know your ERP and CRM disagree",
+  'No definition awareness - "revenue" means whatever it guesses',
+  "No memory - every query starts from zero",
+  "No governance - hallucinations pass every security check",
 ]
 
 const gideStrengths = [
-  "Full provenance — click any number, see the entire chain",
-  "Conflict detection — catches discrepancies before they reach leadership",
-  "Definition enforcement — your metrics, your rules, system-wide",
-  "Decision memory — tracks commitments and compares to reality",
-  "Governed pipeline — LLM proposes, system validates, you decide",
+  "Full provenance - click any number, see the entire chain",
+  "Conflict detection - catches discrepancies before they reach leadership",
+  "Definition enforcement - your metrics, your rules, system-wide",
+  "Decision memory - tracks commitments and compares to reality",
+  "Governed pipeline - LLM proposes, system validates, you decide",
 ]
 
 export function Comparison() {
@@ -83,7 +83,7 @@ export function Comparison() {
             </h3>
 
             <p className="text-[0.9375rem] leading-[1.8] text-white/70">
-              Gide doesn&apos;t generate guesses — it{" "}
+              Gide doesn&apos;t generate guesses, it{" "}
               <span className="text-white">
                 constructs verified decisions from your actual data
               </span>

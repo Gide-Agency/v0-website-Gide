@@ -10,7 +10,7 @@ export function CTA() {
           knowing every number is right.
         </h2>
         <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-          See how Gide turns ambiguity into auditable answers — with a live demo
+          See how Gide turns ambiguity into auditable answers,with a live demo
           or a 20-minute walkthrough.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

@@ -57,7 +57,7 @@ export function Scenario() {
               <span className="text-white">
                 detects the 2% discrepancy, and explains why
               </span>{" "}
-              — a one-time revenue event was miscategorized as recurring.
+             ,a one-time revenue event was miscategorized as recurring.
             </p>
 
             <p className="mt-4 text-[0.9375rem] leading-[1.8] text-white/70">

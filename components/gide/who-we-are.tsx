@@ -39,7 +39,7 @@ const values = [
     icon: Lock,
     title: "AI proposes. You decide.",
     description:
-      "Gide generates. The system validates. You approve. Human judgment is authoritative — always and by design.",
+      "Gide generates. The system validates. You approve. Human judgment is authoritative,always and by design.",
   },
   {
     icon: ShieldCheck,
@@ -64,7 +64,7 @@ export function WhoWeAre() {
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Gide is not a dashboard. Not a chatbot. Not a BI replacement. It&apos;s
               the system that maintains a shared, trusted reality across your
-              company — and turns it into decisions that actually execute.
+              company,and turns it into decisions that actually execute.
             </p>
           </div>
           <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full md:h-56 md:w-56">
@@ -109,7 +109,7 @@ export function WhoWeAre() {
           <h3 className="mb-8 font-serif text-xl text-foreground">
             Our values
           </h3>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {values.map((value) => (
               <div
                 key={value.title}

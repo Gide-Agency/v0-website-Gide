@@ -9,7 +9,7 @@ const steps = [
     number: "Step 02",
     title: "Data Contract",
     description:
-      "Maps the question to required sources, metrics, and definitions — and surfaces any conflicts between them.",
+      "Maps the question to required sources, metrics, and definitions,and surfaces any conflicts between them.",
   },
   {
     number: "Step 03",
@@ -21,7 +21,7 @@ const steps = [
     number: "Step 04",
     title: "Insight",
     description:
-      "Delivers the answer with full provenance — every conclusion traceable to every input, ready for the board.",
+      "Delivers the answer with full provenance,every conclusion traceable to every input, ready for the board.",
   },
 ]
 
@@ -37,7 +37,7 @@ export function HowItWorks() {
             Four steps. Extracting truth.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            Gide doesn&apos;t just generate answers — it constructs them through
+            Gide doesn&apos;t just generate answers,it constructs them through
             a validated pipeline where every step is visible and every output is
             checked.
           </p>

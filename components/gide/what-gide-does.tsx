@@ -3,13 +3,13 @@ const features = [
     number: "01",
     title: 'End the "which dashboard is right?" meeting',
     description:
-      "Gide detects when your systems disagree — before the number reaches a decision-maker. No more two slides with different revenue figures. One truth, with proof.",
+      "Gide detects when your systems disagree,before the number reaches a decision-maker. No more two slides with different revenue figures. One truth, with proof.",
   },
   {
     number: "02",
     title: "Every number carries a chain of evidence",
     description:
-      "Click any insight and see exactly where it came from — through every data source, transformation, and assumption. Your CFO doesn't have to trust you. They can verify.",
+      "Click any insight and see exactly where it came from,through every data source, transformation, and assumption. Your CFO doesn't have to trust you. They can verify.",
   },
   {
     number: "03",

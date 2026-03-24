@@ -9,7 +9,7 @@ const steps = [
   {
     number: "02",
     title: "Data Contract",
-    subtitle: "What data defines this decision — and does it agree?",
+    subtitle: "What data defines this decision,and does it agree?",
     description:
       "Identify the exact sources, metrics, and definitions required, and surface any conflicts before they turn into wrong conclusions.",
   },
@@ -41,7 +41,7 @@ export function StructuredPath() {
             Four steps. Extracting truth.
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            Gide doesn&apos;t just generate answers — it constructs them through
+            Gide doesn&apos;t just generate answers,it constructs them through
             a validated pipeline where every step is visible and every output is
             checked:
           </p>

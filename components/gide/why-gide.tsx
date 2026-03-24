@@ -5,7 +5,7 @@ const approaches = [
     label: "Traditional BI",
     title: "Slow but manual",
     description:
-      "You control every step — and spend 80% of your time building reports, not reading them.",
+      "You control every step,and spend 80% of your time building reports, not reading them.",
     traits: ["Full control", "Extremely slow", "Errors go undetected"],
     highlight: false,
   },
@@ -13,7 +13,7 @@ const approaches = [
     label: "AI Chatbots",
     title: "Fast but blind",
     description:
-      "You get a number in seconds — but no way to verify where it came from or whether it's right.",
+      "You get a number in seconds,but no way to verify where it came from or whether it's right.",
     traits: ["Instant answers", "No source tracing", "Hallucinations undetected"],
     highlight: false,
   },
@@ -21,7 +21,7 @@ const approaches = [
     label: "Gide",
     title: "Fast and provable",
     description:
-      "You get the answer fast — and every step, source, and assumption is visible and auditable.",
+      "You get the answer fast,and every step, source, and assumption is visible and auditable.",
     traits: ["Full provenance", "Conflict detection", "Audit-ready output"],
     highlight: true,
   },

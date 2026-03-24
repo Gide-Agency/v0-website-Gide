@@ -23,7 +23,7 @@ const painPoints = [
     icon: Zap,
     title: "AI that sounds confident but can't show its work",
     description:
-      'When your VP asks "where did this number come from?" — Copilot has nothing. Gide shows the entire chain.',
+      'When your VP asks "where did this number come from?",Copilot has nothing. Gide shows the entire chain.',
   },
 ]
 

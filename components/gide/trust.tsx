@@ -17,13 +17,13 @@ const trustItems = [
     icon: ShieldCheck,
     title: "Conflicts surfaced, not hidden",
     description:
-      "When sources disagree, Gide tells you — with context on why and which to trust.",
+      "When sources disagree, Gide tells you,with context on why and which to trust.",
   },
   {
     icon: Lock,
     title: "Governance as code",
     description:
-      "Ethical constraints, access policies, and business rules are encoded as enforceable system rules — not guidelines that drift.",
+      "Ethical constraints, access policies, and business rules are encoded as enforceable system rules,not guidelines that drift.",
   },
 ]
 
