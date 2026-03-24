@@ -5,9 +5,9 @@
 
 /* Light mode - brand white background */
 :root {
-  --background: #fafafa;
+  --background: #ffffff;
   --foreground: oklch(0.15 0.005 260);
-  --card: #ffffff;
+  --card: #fafafa;
   --card-foreground: oklch(0.15 0.005 260);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0.005 260);
@@ -136,6 +136,6 @@
   }
 
   .animate-scroll-left {
-    animation: scroll-left 30s linear infinite;
+    animation: scroll-left 18s linear infinite;
   }
 }
