@@ -1,46 +1,46 @@
-import { Eye, Link2, FileCheck, Lock } from "lucide-react"
+import { Eye, Link2, ShieldCheck, Lock } from "lucide-react"
 
 const trustItems = [
   {
     icon: Eye,
-    title: "Analysis steps are visible",
+    title: "Every step visible",
     description:
-      "Every analytical step is documented and inspectable by anyone on the team.",
+      "Full transparency into every analytical step. Nothing happens behind closed doors.",
   },
   {
     icon: Link2,
-    title: "Sources are traceable",
+    title: "Every source linked",
     description:
-      "Every number links back to its origin, so you always know where data comes from.",
+      "Click any result. Follow the evidence chain to the raw data. See exactly how it was derived.",
   },
   {
-    icon: FileCheck,
-    title: "Reasoning is auditable",
+    icon: ShieldCheck,
+    title: "Conflicts surfaced, not hidden",
     description:
-      "Logic and assumptions are explicit, making it easy to verify or challenge conclusions.",
+      "When sources disagree, Gide tells you — with context on why and which to trust.",
   },
   {
     icon: Lock,
-    title: "Security-first architecture",
+    title: "Governance as code",
     description:
-      "Your data stays yours. Built with enterprise-grade security from day one.",
+      "Ethical constraints, access policies, and business rules are encoded as enforceable system rules — not guidelines that drift.",
   },
 ]
 
 export function Trust() {
   return (
     <section id="trust" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-xl">
         <div className="mb-16 text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            Trust & transparency
+            Trust & Governance
           </p>
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            Transparent by Design
+            Not just transparent. Governed.
           </h2>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="space-y-6">
           {trustItems.map((item) => (
             <div
               key={item.title}
@@ -49,7 +49,7 @@ export function Trust() {
               <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-border bg-secondary text-muted-foreground">
                 <item.icon className="h-5 w-5" />
               </div>
-              <h3 className="mb-2 font-serif text-lg text-card-foreground">
+              <h3 className="mb-2 font-serif text-lg font-bold text-card-foreground">
                 {item.title}
               </h3>
               <p className="text-sm leading-relaxed text-muted-foreground">

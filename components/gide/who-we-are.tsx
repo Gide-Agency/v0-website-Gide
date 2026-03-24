@@ -47,24 +47,18 @@ export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-16 flex flex-col items-start gap-6 md:flex-row md:items-center">
-          <div className="flex-1">
-            <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-              Who we are
-            </p>
-            <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-              We are building the layer between your questions, your data and your action.
-            </h2>
-          </div>
-          {/* Harald image */}
-          <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full md:h-56 md:w-56">
-            <Image
-              src="/images/Harald-Helsinki.png"
-              alt="Harald in Helsinki"
-              fill
-              className="object-cover"
-            />
-          </div>
+        <div className="mb-16 max-w-2xl">
+          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+            Who we are
+          </p>
+          <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
+            We&apos;re building the governed intelligence layer between your data and your decisions.
+          </h2>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+            Gide is not a dashboard. Not a chatbot. Not a BI replacement. It&apos;s
+            the system that maintains a shared, trusted reality across your
+            company — and turns it into decisions that actually execute.
+          </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -86,9 +80,10 @@ export function WhoWeAre() {
               A solution for companies
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Gide integrates with existing data systems and permissions, allowing
-              companies to use AI securely for analysis without surrendering
-              sovereignty.
+              Gide runs inside your environment, not as a black box in someone
+              else&apos;s cloud. It connects directly to your systems, respects your
+              permissions, and never uses your data for training. Fully encrypted.
+              GDPR-native. EU AI Act–ready.
             </p>
           </div>
         </div>
