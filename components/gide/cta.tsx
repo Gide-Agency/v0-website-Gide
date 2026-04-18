@@ -5,13 +5,10 @@ export function CTA() {
     <section id="cta" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-          Walk into the next meeting
-          <br />
-          knowing every number is right.
+          Your next meeting, with every number right.
         </h2>
-        <p className="mx-auto mt-6 max-w-md text-base leading-relaxed text-muted-foreground">
-          See how Gide turns ambiguity into auditable answers,with a live demo
-          or a 20-minute walkthrough.
+        <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
+          Get answer in Slack or act as a supervisor in the console.
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a

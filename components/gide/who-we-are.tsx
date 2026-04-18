@@ -1,7 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Shield, Link2, Lock, ShieldCheck } from "lucide-react"
 
 const partners = [
   {
@@ -38,33 +37,6 @@ const partners = [
   },
 ]
 
-const values = [
-  {
-    icon: Shield,
-    title: "Reality outranks coherence",
-    description:
-      "When data contradicts the narrative, the data wins. Gide never optimizes for a clean story over a true one.",
-  },
-  {
-    icon: Link2,
-    title: "Provenance is mandatory",
-    description:
-      "No insight without a source. No decision without evidence. If it can't be traced, it doesn't ship.",
-  },
-  {
-    icon: Lock,
-    title: "AI proposes. You decide.",
-    description:
-      "Gide generates. The system validates. You approve. Human judgment is authoritative,always and by design.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Sovereign by design",
-    description:
-      "Your data never leaves your control and is never reused for model training. Gide proposes. Human judgment remains authoritative.",
-  },
-]
-
 export function WhoWeAre() {
   return (
     <section id="who-we-are" className="px-6 py-24 md:py-32">
@@ -75,13 +47,8 @@ export function WhoWeAre() {
               Who we are
             </p>
             <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-              We&apos;re building the governed intelligence layer between your data and your decisions.
+              We are building agents that you can trust to do analytics.
             </h2>
-            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Gide is not a dashboard. Not a chatbot. Not a BI replacement. It&apos;s
-              the system that maintains a shared, trusted reality across your
-              company,and turns it into decisions that actually execute.
-            </p>
           </div>
           <div className="relative h-48 w-48 flex-shrink-0 overflow-hidden rounded-full md:h-56 md:w-56">
             <Image
@@ -100,50 +67,25 @@ export function WhoWeAre() {
               A tool for analysts
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Helps analysts precisely define business questions and goals. Locate
-              the relevant data. Define the process to use the data for a valuable
-              answer.
+              For the analyst everyone depends on. Gide gives you a team of
+              governed agents,and makes you the most trusted person in the
+              room.
             </p>
           </div>
 
           {/* A solution for companies */}
           <div className="rounded-lg border border-border bg-card p-8">
             <h3 className="mb-4 font-serif text-xl text-card-foreground">
-              A solution for companies
+              Answers for leaders
             </h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Gide runs inside your environment, not as a black box in someone
-              else&apos;s cloud. It connects directly to your systems, respects your
-              permissions, and never uses your data for training. Fully encrypted.
-              GDPR-native. EU AI Act–ready.
+              Runs inside your environment. Connects to your systems. Respects
+              your permissions. Never trains on your data. GDPR-native. EU AI
+              Act–ready.
             </p>
           </div>
         </div>
 
-        {/* Our values */}
-        <div className="mt-12">
-          <h3 className="mb-8 font-serif text-xl text-foreground">
-            Our values
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {values.map((value) => (
-              <div
-                key={value.title}
-                className="rounded-lg border border-border bg-card p-8"
-              >
-                <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-md bg-secondary text-muted-foreground">
-                  <value.icon className="h-5 w-5" />
-                </div>
-                <h4 className="mb-3 font-serif text-lg text-card-foreground">
-                  {value.title}
-                </h4>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {value.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
         {/* Partners and supporters */}
         <div className="mt-20">
           <h3 className="mb-12 text-center font-serif text-3xl tracking-tight text-foreground sm:text-4xl text-balance">

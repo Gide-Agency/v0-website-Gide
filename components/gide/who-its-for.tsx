@@ -1,71 +1,60 @@
-import { Layers, Clock, RefreshCw, Zap } from "lucide-react"
-
-const painPoints = [
-  {
-    icon: Layers,
-    title: "Scattered data across systems that don't communicate",
-    description:
-      "You spend hours figuring out which number is right before the real work even starts.",
-  },
-  {
-    icon: Clock,
-    title: "Decisions delayed because nobody trusts the data",
-    description:
-      "Leadership won't commit to a strategy when they're not sure the numbers behind it are correct.",
-  },
-  {
-    icon: RefreshCw,
-    title: "Rebuilding context every time & nothing compounds",
-    description:
-      "Last month's work doesn't help this month because there's no institutional memory.",
-  },
-  {
-    icon: Zap,
-    title: "AI that sounds confident but can't show its work",
-    description:
-      'When your VP asks "where did this number come from?",Copilot has nothing. Gide shows the entire chain.',
-  },
-]
-
 export function WhoItsFor() {
   return (
     <section id="who-its-for" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-3xl">
-        <div className="mb-16 max-w-2xl">
-          <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            Who it&apos;s for
-          </p>
+      <div className="mx-auto max-w-6xl">
+        <p className="mb-3 font-sans text-[0.625rem] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+          Who it&apos;s for
+        </p>
+        <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
+          Built for the people who need the numbers.
+        </h2>
+        <p className="mt-6 max-w-3xl text-[0.9375rem] leading-[1.8] text-muted-foreground">
+          Gide fits companies where data lives in too many places, where the
+          analyst is outnumbered by the questions, and where the CEO
+          can&apos;t wait two days for an answer that should take two minutes.
+        </p>
 
-          <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            Built for the analyst everyone depends on.
-          </h2>
-          <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-            You&apos;re the one who gets the Slack message at 4pm. The one who has
-            to reconcile three systems before you can even start analyzing. The
-            one whose credibility is on the line every time a number reaches
-            leadership.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          {painPoints.map((point) => (
-            <div
-              key={point.title}
-              className="flex items-start gap-4 rounded-lg border border-border bg-card p-6"
-            >
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-secondary text-muted-foreground">
-                <point.icon className="h-5 w-5" />
-              </div>
-              <div>
-                <h3 className="mb-1 text-sm font-medium text-card-foreground">
-                  {point.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {point.description}
-                </p>
-              </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {/* For operators and CEOs */}
+          <div className="rounded-lg border border-border bg-card p-10">
+            <div className="mb-6 flex items-center gap-2.5">
+              <div className="h-1.5 w-1.5 rounded-full bg-muted-foreground" />
+              <span className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                If this sounds like you
+              </span>
             </div>
-          ))}
+            <h3 className="mb-4 font-serif text-2xl leading-tight text-foreground">
+              You ask the questions. You need answers that hold up.
+            </h3>
+            <p className="text-[0.9375rem] leading-[1.8] text-muted-foreground">
+              You&apos;re running a company where numbers live across Stripe,
+              HubSpot, CSVs, a warehouse, and three spreadsheets. Every
+              question means a wait. Every board meeting means hoping the
+              number is right. Gide gives you answers in Slack, with
+              evidence,so you walk in knowing.
+            </p>
+          </div>
+
+          {/* For analysts and data teams */}
+          <div className="rounded-lg border border-blue-500/30 bg-blue-50/40 p-10">
+            <div className="mb-6 flex items-center gap-2.5">
+              <div className="h-1.5 w-1.5 rounded-full bg-blue-500" />
+              <span className="font-sans text-[0.625rem] font-medium uppercase tracking-[0.2em] text-blue-600">
+                Or this
+              </span>
+            </div>
+            <h3 className="mb-4 font-serif text-2xl leading-tight text-foreground">
+              You are the bottleneck. You shouldn&apos;t be.
+            </h3>
+            <p className="text-[0.9375rem] leading-[1.8] text-muted-foreground">
+              One of you, a queue of requests, no time for real analysis.
+              Every dashboard edit takes an afternoon. Every ad-hoc question
+              pushes the real work out a week. Gide gives you a team of
+              governed agents that do the grunt work under your
+              direction,so you can spend your time on what actually needs a
+              human.
+            </p>
+          </div>
         </div>
       </div>
     </section>

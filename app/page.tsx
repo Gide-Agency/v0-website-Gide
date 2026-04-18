@@ -1,6 +1,8 @@
 import { Header } from "@/components/gide/header"
 import { Hero } from "@/components/gide/hero"
 import { Scenario } from "@/components/gide/scenario"
+import { WhoItsFor } from "@/components/gide/who-its-for"
+import { Impact } from "@/components/gide/impact"
 import { WhoWeAre } from "@/components/gide/who-we-are"
 import { Trust } from "@/components/gide/trust"
 import { CTA } from "@/components/gide/cta"
@@ -22,6 +24,10 @@ export default function Page() {
         <Hero />
         <Divider />
         <Scenario />
+        <Divider />
+        <WhoItsFor />
+        <Divider />
+        <Impact />
         <Divider />
         <WhoWeAre />
         <Divider />

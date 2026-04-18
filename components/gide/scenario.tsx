@@ -7,8 +7,7 @@ export function Scenario() {
         </h2>
         <p className="mt-6 max-w-3xl text-[0.9375rem] leading-[1.8] text-white/70">
           CEOs ask in Slack. Analysts work in a console where every step is
-          proposed, and they approve, edit, or reject,like accept/reject in an
-          IDE. Same agents. Same governance. Two surfaces.
+          proposed,accept, edit, or reject. Same agents. Same governance.
         </p>
 
         <div className="mt-12 grid gap-0 md:grid-cols-2">
@@ -22,17 +21,15 @@ export function Scenario() {
             </div>
 
             <h3 className="mb-4 font-serif text-2xl leading-tight">
-              Ask the question. Get the answer.
+              Get answers in Slack.
             </h3>
 
             <p className="text-[0.9375rem] leading-[1.8] text-white/70">
-              Your CEO types a question. Gide connects to your data, runs a
-              governed investigation, and returns a{" "}
+              Your CEO asks. Gide runs a governed investigation and returns a{" "}
               <span className="text-white">
                 verified answer with its evidence
               </span>
-              . No dashboards. No waiting on an analyst for a number that
-              should take seconds.
+              . No dashboards. No waiting.
             </p>
           </div>
 
@@ -50,13 +47,12 @@ export function Scenario() {
             </h3>
 
             <p className="text-[0.9375rem] leading-[1.8] text-white/70">
-              Modify a dashboard. Build a new pipeline. Run a deep
-              investigation. Agents propose each step. You approve, edit, or
-              reject,and{" "}
+              Modify dashboards. Build pipelines. Run investigations. Agents
+              propose each step. You approve, edit, or reject,and{" "}
               <span className="text-white">
-                ship work that used to take a week in an afternoon
+                ship a week&apos;s work in an afternoon
               </span>
-              . One analyst, the output of a team.
+              .
             </p>
           </div>
         </div>

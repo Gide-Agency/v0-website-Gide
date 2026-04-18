@@ -1,29 +1,29 @@
-import { Eye, Link2, ShieldCheck, Lock } from "lucide-react"
+import { GitPullRequest, Link2, AlertTriangle, ShieldCheck } from "lucide-react"
 
 const trustItems = [
   {
-    icon: Eye,
-    title: "Every step visible",
+    icon: GitPullRequest,
+    title: "Agents propose. You approve.",
     description:
-      "Full transparency into every analytical step. Nothing happens behind closed doors.",
+      "Every step is visible before it runs. Accept, edit, or reject,like reviewing a pull request, but for your data.",
   },
   {
     icon: Link2,
-    title: "Every source traced",
+    title: "Every number clicks back to its source.",
     description:
-      "Click any result. Follow the evidence chain to the raw data. See exactly how it was derived.",
+      "Full evidence chain from raw data through every transformation. Your CFO doesn't have to trust you. They can verify.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Conflicts surfaced, not hidden.",
+    description:
+      "When your ERP and your CRM disagree, Gide tells you before the number reaches leadership,with context on why, and which to trust.",
   },
   {
     icon: ShieldCheck,
-    title: "Conflicts surfaced, not hidden",
+    title: "Sovereign by design.",
     description:
-      "When sources disagree, Gide tells you,with context on why and which to trust.",
-  },
-  {
-    icon: Lock,
-    title: "Governance as code",
-    description:
-      "Ethical constraints, access policies, and business rules are encoded as enforceable system rules,not guidelines that drift.",
+      "Runs in your environment. Encrypted. Never used for training. GDPR-native, EU AI Act–ready.",
   },
 ]
 
@@ -33,10 +33,10 @@ export function Trust() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-16 text-center">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            Trust & Governance
+            Trust &amp; Governance
           </p>
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
-            Not confident. True.
+            Confidence that is backed by truth.
           </h2>
         </div>
 

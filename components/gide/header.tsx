@@ -5,9 +5,11 @@ import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Who It's For", href: "#who-its-for" },
-  { label: "Who we are", href: "#who-we-are" },
+  { label: "How", href: "#how-it-works" },
+  { label: "Who", href: "#who-its-for" },
+  { label: "What", href: "#impact" },
+  { label: "Us", href: "#who-we-are" },
+  { label: "Why", href: "#trust" },
 ]
 
 export function Header() {
