@@ -14,10 +14,11 @@ export function Hero() {
         </div>
 
         <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
-          Stop guessing.
-          <br />
-          Start operating on <span className="text-blue-500">reality.</span>
+          <span className="text-blue-500">Governed</span> intelligence agents.
         </h1>
+        <p className="mt-4 font-sans italic text-lg text-muted-foreground sm:text-xl">
+          for data analytics
+        </p>
 
         <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
           Your company already has the data.
