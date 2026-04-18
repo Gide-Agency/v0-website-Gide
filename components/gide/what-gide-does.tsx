@@ -25,7 +25,7 @@ export function WhatGideDoes() {
       <div className="mx-auto max-w-3xl">
         <div className="mb-16 max-w-2xl">
           <p className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            What changes with Gide
+            What changes
           </p>
           <h2 className="font-serif text-3xl tracking-tight text-foreground sm:text-4xl md:text-5xl text-balance">
             Your analyst becomes the most trusted person in the room.
