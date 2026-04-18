@@ -16,7 +16,7 @@ export function Hero() {
         <h1 className="whitespace-nowrap font-serif text-2xl leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
           <span className="text-blue-500">Governed</span> intelligence agents.
         </h1>
-        <p className="mt-4 font-serif italic text-xl text-muted-foreground sm:text-2xl md:text-3xl">
+        <p className="mt-4 font-serif italic text-xl text-foreground sm:text-2xl md:text-3xl">
           for data analytics
         </p>
 
