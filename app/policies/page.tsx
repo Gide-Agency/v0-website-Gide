@@ -161,7 +161,7 @@ export default function PoliciesPage() {
                 <li>Technical data (IP address, device, browser)</li>
               </ul>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                We do not access, store, or retain the underlying data in your connected databases. Gide processes queries and returns insights — your source data stays in your infrastructure.
+                We do not access, store, or retain the underlying data in your connected databases. Gide processes queries and returns insights, your source data stays in your infrastructure.
               </p>
             </div>
 

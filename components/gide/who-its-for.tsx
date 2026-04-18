@@ -9,9 +9,8 @@ export function WhoItsFor() {
           Built for the people who need the numbers.
         </h2>
         <p className="mt-6 max-w-3xl text-[0.9375rem] leading-[1.8] text-muted-foreground">
-          Gide fits companies where data lives in too many places, where the
-          analyst is outnumbered by the questions, and where the CEO
-          can&apos;t wait two days for an answer that should take two minutes.
+          For teams where data is scattered, analysts are swamped, and CEOs
+          can&apos;t wait days for answers.
         </p>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -27,11 +26,10 @@ export function WhoItsFor() {
               You ask the questions. You need answers that hold up.
             </h3>
             <p className="text-[0.9375rem] leading-[1.8] text-muted-foreground">
-              You&apos;re running a company where numbers live across Stripe,
-              HubSpot, CSVs, a warehouse, and three spreadsheets. Every
-              question means a wait. Every board meeting means hoping the
-              number is right. Gide gives you answers in Slack, with
-              evidence,so you walk in knowing.
+              Hours lost hunting for data. Reports you shouldn&apos;t be
+              running yourself. Every board meeting, a hope the number holds
+              up. Gide answers in Slack, with evidence,so you walk in
+              knowing.
             </p>
           </div>
 
@@ -47,12 +45,10 @@ export function WhoItsFor() {
               You are the bottleneck. You shouldn&apos;t be.
             </h3>
             <p className="text-[0.9375rem] leading-[1.8] text-muted-foreground">
-              One of you, a queue of requests, no time for real analysis.
-              Every dashboard edit takes an afternoon. Every ad-hoc question
-              pushes the real work out a week. Gide gives you a team of
-              governed agents that do the grunt work under your
-              direction,so you can spend your time on what actually needs a
-              human.
+              Days debugging pipelines. More time transforming than
+              analysing,and one wrong answer destroys trust. Gide gives you
+              a team of governed agents that work under your review, so your
+              time goes where it should.
             </p>
           </div>
         </div>

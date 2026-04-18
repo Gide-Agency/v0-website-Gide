@@ -136,12 +136,12 @@
   }
 
   .animate-scroll-left {
-    animation: scroll-left 18s linear infinite;
+    animation: scroll-left 14.4s linear infinite;
   }
 
   @media (min-width: 768px) {
     .animate-scroll-left {
-      animation: scroll-left 36s linear infinite;
+      animation: scroll-left 28.8s linear infinite;
     }
   }
 }
