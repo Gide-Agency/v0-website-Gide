@@ -13,10 +13,10 @@ export function Hero() {
           </span>
         </div>
 
-        <h1 className="font-serif text-4xl leading-tight tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl text-balance">
+        <h1 className="whitespace-nowrap font-serif text-2xl leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl">
           <span className="text-blue-500">Governed</span> intelligence agents.
         </h1>
-        <p className="mt-4 font-sans italic text-lg text-muted-foreground sm:text-xl">
+        <p className="mt-4 font-serif italic text-lg text-muted-foreground sm:text-xl">
           for data analytics
         </p>
 
