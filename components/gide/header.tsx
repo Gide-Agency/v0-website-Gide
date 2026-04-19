@@ -48,12 +48,12 @@ export function Header() {
 
         <div className="hidden items-center justify-end md:flex">
           <a
-            href="https://calendly.com/harald-gideagency/25plus"
+            href="https://goverened-intelligence-agents.lovable.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-md bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
           >
-            Book a walkthrough
+            Test live demo
           </a>
         </div>
 
@@ -85,13 +85,13 @@ export function Header() {
               </a>
             ))}
             <a
-              href="https://calendly.com/harald-gideagency/25plus"
+              href="https://goverened-intelligence-agents.lovable.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-block rounded-md bg-foreground px-5 py-2 text-center text-sm font-medium text-background transition-colors hover:bg-foreground/80"
               onClick={() => setMobileOpen(false)}
             >
-              Book a walkthrough
+              Test live demo
             </a>
           </div>
         </nav>
