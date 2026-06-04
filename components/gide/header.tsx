@@ -41,7 +41,7 @@ export function Header() {
           Meet the mind
         </a>
 
-        <div className="flex w-full justify-end md:hidden">
+        <div className="flex w-full items-center justify-between md:hidden">
           <button
             className="text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -49,6 +49,14 @@ export function Header() {
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
+          <a
+            href="https://www.enterpriseworldmodel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-md bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
+          >
+            Meet the mind
+          </a>
         </div>
       </div>
 
@@ -68,15 +76,6 @@ export function Header() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="https://www.enterpriseworldmodel.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-block rounded-md bg-foreground px-5 py-2 text-center text-sm font-medium text-background transition-colors hover:bg-foreground/80"
-              onClick={() => setMobileOpen(false)}
-            >
-              Meet the mind
-            </a>
           </div>
         </nav>
       )}
