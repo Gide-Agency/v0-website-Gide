@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
@@ -17,20 +16,7 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
-      <div className="mx-auto grid max-w-6xl grid-cols-[auto_1fr_auto] items-center px-6 py-4">
-        <div className="flex items-center">
-          <a href="#" className="block">
-            <Image
-              src="/images/gide-logo.png"
-              alt="Gide"
-              width={80}
-              height={28}
-              className="h-auto w-auto object-contain"
-              priority
-            />
-          </a>
-        </div>
-
+      <div className="relative mx-auto flex max-w-6xl items-center justify-center px-6 py-10">
         <nav
           className="hidden min-w-0 items-center justify-center gap-6 whitespace-nowrap md:flex lg:gap-8"
           aria-label="Main navigation"
@@ -46,18 +32,16 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center justify-end md:flex">
-          <a
-            href="https://goverened-intelligence-agents.lovable.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
-          >
-            Test live demo
-          </a>
-        </div>
+        <a
+          href="https://www.enterpriseworldmodel.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute right-0 top-1/2 hidden -translate-y-1/2 rounded-md bg-foreground px-5 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/80 md:block"
+        >
+          Meet the mind
+        </a>
 
-        <div className="col-span-2 flex justify-end md:hidden">
+        <div className="flex w-full justify-end md:hidden">
           <button
             className="text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -85,13 +69,13 @@ export function Header() {
               </a>
             ))}
             <a
-              href="https://goverened-intelligence-agents.lovable.app/"
+              href="https://www.enterpriseworldmodel.com"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-block rounded-md bg-foreground px-5 py-2 text-center text-sm font-medium text-background transition-colors hover:bg-foreground/80"
               onClick={() => setMobileOpen(false)}
             >
-              Test live demo
+              Meet the mind
             </a>
           </div>
         </nav>

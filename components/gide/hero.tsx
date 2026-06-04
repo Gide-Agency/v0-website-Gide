@@ -25,7 +25,7 @@ export function Hero() {
             href="https://goverened-intelligence-agents.lovable.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-md bg-foreground px-7 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/80"
+            className="group inline-flex items-center gap-2 rounded-md bg-blue-600 px-7 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-700"
           >
             Test live demo
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />

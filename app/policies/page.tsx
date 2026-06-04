@@ -33,8 +33,8 @@ export default function PoliciesPage() {
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 For questions about how we process your data, contact us at{" "}
-                <a href="mailto:support@gideagency.com" className="text-foreground underline hover:no-underline">
-                  support@gideagency.com
+                <a href="mailto:harald@gideagency.com" className="text-foreground underline hover:no-underline">
+                  harald@gideagency.com
                 </a>.
               </p>
             </div>
@@ -83,8 +83,8 @@ export default function PoliciesPage() {
               </ul>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 To exercise your rights, email{" "}
-                <a href="mailto:support@gideagency.com" className="text-foreground underline hover:no-underline">
-                  support@gideagency.com
+                <a href="mailto:harald@gideagency.com" className="text-foreground underline hover:no-underline">
+                  harald@gideagency.com
                 </a>.
               </p>
             </div>
@@ -107,8 +107,8 @@ export default function PoliciesPage() {
               <h2 className="mb-3 font-serif text-xl text-foreground">Data Processing Agreement</h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Enterprise customers can request a Data Processing Agreement (DPA) that covers Gide's processing of data on behalf of your organisation. Contact{" "}
-                <a href="mailto:support@gideagency.com" className="text-foreground underline hover:no-underline">
-                  support@gideagency.com
+                <a href="mailto:harald@gideagency.com" className="text-foreground underline hover:no-underline">
+                  harald@gideagency.com
                 </a>{" "}
                 to request a DPA.
               </p>
@@ -125,8 +125,8 @@ export default function PoliciesPage() {
               <h2 className="mb-3 font-serif text-xl text-foreground">Contact</h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Data protection inquiries:{" "}
-                <a href="mailto:support@gideagency.com" className="text-foreground underline hover:no-underline">
-                  support@gideagency.com
+                <a href="mailto:harald@gideagency.com" className="text-foreground underline hover:no-underline">
+                  harald@gideagency.com
                 </a>
               </p>
             </div>
@@ -201,8 +201,8 @@ export default function PoliciesPage() {
               <h2 className="mb-3 font-serif text-xl text-foreground">Your choices</h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 You can request access, correction, or deletion of your personal data at any time. To exercise your rights, email{" "}
-                <a href="mailto:support@gideagency.com" className="text-foreground underline hover:no-underline">
-                  support@gideagency.com
+                <a href="mailto:harald@gideagency.com" className="text-foreground underline hover:no-underline">
+                  harald@gideagency.com
                 </a>.
               </p>
             </div>
@@ -211,8 +211,8 @@ export default function PoliciesPage() {
               <h2 className="mb-3 font-serif text-xl text-foreground">Contact</h2>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 Questions about this policy? Contact us at{" "}
-                <a href="mailto:support@gideagency.com" className="text-foreground underline hover:no-underline">
-                  support@gideagency.com
+                <a href="mailto:harald@gideagency.com" className="text-foreground underline hover:no-underline">
+                  harald@gideagency.com
                 </a>.
               </p>
             </div>

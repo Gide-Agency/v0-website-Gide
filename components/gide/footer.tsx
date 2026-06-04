@@ -16,8 +16,8 @@ export function Footer() {
                 className="h-auto w-auto object-contain"
               />
             </a>
-            <a href="mailto:support@gideagency.com" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-              support@gideagency.com
+            <a href="mailto:harald@gideagency.com" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+              harald@gideagency.com
             </a>
             <div className="flex items-center gap-2">
               <a
